@@ -27,10 +27,10 @@ import guizilla.src._
 class InvalidURLException extends Exception
 
 /**
- * Class responsible for handling browser navigation.
- * TODO: extend Browser class that was written for Sparkzilla, i.e.
- * where your code dealt with networking and communicating with server.
- */
+  * Class responsible for handling browser navigation.
+  * TODO: extend Browser class that was written for Sparkzilla, i.e.
+  * where your code dealt with networking and communicating with server.
+  */
 class GUIBrowser {
 
   @FXML protected var gPane: GridPane = null
@@ -44,27 +44,27 @@ class GUIBrowser {
 
   var currentHost: String = null
   val homePage = List(
-      PageText("\n\nG U I Z I L L A   B R O W S E R\n______________________________\n"),
-      PageText("Searching Made Easy\n"))
+    PageText("\n\nG U I Z I L L A   B R O W S E R\n______________________________\n"),
+    PageText("Searching Made Easy\n"),
+    Link("http://localhost/Index", PageText("#Go to Index")))
   val connectionErrorPage =
     List(new PageText("\n\nError communicating with server\n\n"))
   val unknownHostPage = List(new PageText("\n\nUnknown host\n\n"))
 
   var pageCache = List[(String, List[HTMLElement])]()
   pageCache = (null, homePage) :: pageCache
-  
 
   /**
-   * Handles the pressing of the submit button on the main GUI page.
-   */
+    * Handles the pressing of the submit button on the main GUI page.
+    */
 
   @FXML def handleQuitButtonAction(event: ActionEvent) {
     stage.close()
   }
 
   /**
-   * Handles the pressing of the back button on the main GUI page.
-   */
+    * Handles the pressing of the back button on the main GUI page.
+    */
   @FXML def handleBackButtonAction(event: ActionEvent) {
     pageCache = pageCache.tail
 
@@ -77,8 +77,8 @@ class GUIBrowser {
   }
 
   /**
-   * Handles submitting URL button action.
-   */
+    * Handles submitting URL button action.
+    */
   @FXML def handleSubmitButtonAction(event: ActionEvent) {
     urlText = urlBar.getText
     connectToUrl(urlText, "")
@@ -90,10 +90,10 @@ class GUIBrowser {
   }
 
   /**
-   * Sets the stage field of the controller to the given stage.
-   *
-   * @param stage The stage
-   */
+    * Sets the stage field of the controller to the given stage.
+    *
+    * @param stage The stage
+    */
   def setStage(stage: Stage) {
     this.stage = stage
     render()
@@ -104,15 +104,16 @@ class GUIBrowser {
   // fields might you want the rendering process to have access to?
 
   /**
-   * Parses URL to give host and path
-   * @param url- String containing url
-   * @returns- (String, String) containing host and path
-   */
+    * Parses URL to give host and path
+    * @param url- String containing url
+    * @returns- (String, String) containing host and path
+    */
   //unit-testable
   private def parseUrl(url: String): (String, String) = {
     if (url.startsWith("http://")) {
       val address = url.replace("http://", "")
-      val host = address.substring(0,
+      val host = address.substring(
+        0,
         if (address.indexOf("/") == -1) address.length
         else address.indexOf("/"))
       val path = address.substring(
@@ -129,11 +130,11 @@ class GUIBrowser {
     }
   }
   /**
-   * Connect to specified URL with form data, if any
-   * @param url- String containing URL
-   * @param formData- String containing encoded form data
-   * @returns Unit
-   */
+    * Connect to specified URL with form data, if any
+    * @param url- String containing URL
+    * @param formData- String containing encoded form data
+    * @returns Unit
+    */
   private def connectToUrl(url: String, formData: String) {
     try {
       val parsedUrl = parseUrl(url)
@@ -154,12 +155,12 @@ class GUIBrowser {
   }
 
   /**
-   * Sends request with given page details and adds page to cache
-   * @param host- String containing host name
-   * @param path- String containing path to file
-   * @param formData- String containing encoded form data
-   * @returns Unit
-   */
+    * Sends request with given page details and adds page to cache
+    * @param host- String containing host name
+    * @param path- String containing path to file
+    * @param formData- String containing encoded form data
+    * @returns Unit
+    */
   private def loadPage(host: String, path: String, formData: String) {
     println("Connecting to: " + host + ":" + port)
     val socket: Socket = new Socket(host, port)
@@ -195,9 +196,9 @@ class GUIBrowser {
   }
 
   /**
-   * Renders page
-   * @param page- Page to be rendered
-   */
+    * Renders page
+    * @param page- Page to be rendered
+    */
   private def renderPage(page: List[HTMLElement]) {
     println("Rendering Page...")
     println("-----------")
@@ -215,22 +216,28 @@ class GUIBrowser {
         label.setText(content)
         box.getChildren.add(label)
       case Link(ele, PageText(content)) =>
-        if (content.startsWith("#")) {
-          val button = new Button(content.substring(1))
+        var data = if (content.startsWith("#")) "#" else ""
+        var text = if (content.startsWith("#")) content.substring(1) else content
+        if (content.contains("%")) {
+          data = content.split("%")(0)
+          text = content.split("%")(1)
+        }
+        if (data.startsWith("#")) {
+          val button = new Button(text)
           button.setOnAction(
             new EventHandler[ActionEvent]() {
               override def handle(a: ActionEvent) {
-                connectToUrl(ele, "")
+                connectToUrl(ele, data.substring(1))
                 render()
               }
             })
           box.getChildren.add(button)
         } else {
-          val button = new Hyperlink(content)
+          val button = new Hyperlink(text)
           button.setOnAction(
             new EventHandler[ActionEvent]() {
               override def handle(a: ActionEvent) {
-                connectToUrl(ele, "")
+                connectToUrl(ele, data)
                 render()
               }
             })
@@ -240,6 +247,7 @@ class GUIBrowser {
         ele.foreach { x => renderElement(x) }
       case t: TextInput =>
         val textField = new TextField()
+        if (t.getValue.isDefined) textField.setText(t.getValue.get)
         textField.textProperty().addListener(new ChangeListener[String]() {
           override def changed(ov: ObservableValue[_ <: String], oldV: String, newV: String) {
             t.setValue(newV)
@@ -262,10 +270,10 @@ class GUIBrowser {
   }
 
   /**
-   * Parses the input from the server into an HTMLElement list.
-   * @param inputFromServer- BufferedReader containing HTML from server
-   * @returns HTMLElement list containing hierarchical list of the HTMLElements
-   */
+    * Parses the input from the server into an HTMLElement list.
+    * @param inputFromServer- BufferedReader containing HTML from server
+    * @returns HTMLElement list containing hierarchical list of the HTMLElements
+    */
   private def getHTMLElementList(inputFromServer: BufferedReader): List[HTMLElement] = {
     val parser = new HTMLParser(new HTMLTokenizer(inputFromServer))
     println("TEST")
