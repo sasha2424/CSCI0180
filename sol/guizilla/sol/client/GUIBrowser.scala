@@ -263,6 +263,7 @@ class GUIBrowser {
       case SubmitInput(form) =>
 
         val button = new Button("Submit")
+        button.setStyle("-fx-text-fill: #0000ff");
         button.setOnAction(
           new EventHandler[ActionEvent]() {
             override def handle(a: ActionEvent) {

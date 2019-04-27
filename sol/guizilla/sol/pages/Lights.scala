@@ -3,44 +3,57 @@ package guizilla.sol.pages
 import guizilla.src._
 
 class Lights extends Page {
-  private var text = ""
-  private var option = 0
+  private val rows = 5
+  private val cols = 5
+  private var grid = Array.ofDim[Boolean](rows, cols)
+
+  for (i <- 0 until rows) {
+    for (j <- 0 until cols) {
+      grid(i)(j) = if (Math.random() < .5) true else false
+    }
+  }
 
   override def defaultHandler(inputs: Map[String, String], sessionId: String): String =
-    menu(inputs, sessionId)
+    game(inputs, sessionId)
 
-  def menu(inputs: Map[String, String], sessionId: String): String =
-    "<html><body><p>StringBuilder\n--------------</p>" +
-      "<form method=\"post\" action=\"/id:" + sessionId + "/result\">" +
-      "<p> Please enter some text and select an option</p>" +
-      "<p> String: </p>" +
-      "<input type=\"text\" name=\"text\" />" +
-      "<p> <a href=\"/StringBuilder\">Return to the Menu</a><a href=\"/StringBuilder\">Return to the Menu</a><a href=\"/StringBuilder\">Return to the Menu</a></p>" +
-      "<input type=\"text\" name=\"option\" />" +
-      "<input type=\"submit\" value=\"submit\" />" +
-      "</form></body></html>"
-
-  def result(inputs: Map[String, String], sessionId: String): String =
-    inputs.get("option") match {
-      case Some("1") =>
-        "<html><body>" +
-          "<p>" + inputs.get("text").get.reverse + "</p>" +
-          "</body></html>"
-      case Some("2") =>
-        "<html><body>" +
-          "<p>" + inputs.get("text").get + inputs.get("text").get + "</p>" +
-          "</body></html>"
-      case Some("3") =>
-        "<html><body>" +
-          "<p>SURPRIZE!!!\nLMAO GODEEM!!!!</p>" +
-          "</body></html>"
-      case Some(x) =>
-        "<html><body>" +
-          "<p>That isn't a valid option!" +
-          "<a href=\"/StringBuilder\">Return to the Menu</a></p></body></html>"
-      case None =>
-        "<html><body><p>I'm sorry, there was an error retrieving your input." +
-          "<a href=\"/StringBuilder\">Return to the Menu</a></p></body></html>"
+  def game(inputs: Map[String, String], sessionId: String): String = {
+    if(inputs.contains("i") && inputs.contains("j")){
+      clickOnGrid(inputs.get("i").get.toInt,inputs.get("j").get.toInt)
+    }
+    
+    var lights = ""
+    for (i <- 0 until rows) {
+      lights += "<p>"
+      for (j <- 0 until cols) {
+        lights += "<a href=\"/id:" + sessionId + "/game\">#i=" + i + "&j=" + j + "%"
+        if (grid(i)(j)) {
+          lights += "X</a>"
+        } else {
+          lights += "O</a>"
+        }
+      }
+      lights += "</p>"
     }
 
+    return "<html><body>" +
+      "<p>THE LIGHT GAME\n----------------</p>" +
+      "<p> Try to turn off all the light!</p>" +
+      lights +
+      "</body></html>"
+  }
+  
+  def clickOnGrid(i : Integer, j : Integer) {
+    toggleGrid(i,j)
+    toggleGrid(i,j+1)
+    toggleGrid(i,j-1)
+    toggleGrid(i+1,j)
+    toggleGrid(i-1,j)
+  }
+
+  def toggleGrid(i : Integer, j : Integer) {
+    if(i < 0 || i >= rows || j <0 || j >= cols){
+      return
+    }
+    grid(i)(j) = !grid(i)(j)
+  }
 }
