@@ -153,7 +153,7 @@ class Server {
       }
       val clone = pageMap.get(stringID).get.clone()
       val cloneID = ID.toString()
-      pageMap += (cloneID -> clone)
+      pageMap.put(cloneID, clone)
       ID += 1
       return cloneID
     }
