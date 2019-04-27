@@ -1,0 +1,270 @@
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:
+Invalid Url
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:Invalid Url
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:derfkug
+Invalid Url
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http:/
+Invalid Url
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http://
+Connecting to: :8080
+Rendering Page...
+-----------
+
+
+Error communicating with server
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http:///
+Connecting to: :8080
+Rendering Page...
+-----------
+
+
+Error communicating with server
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http://stilgar
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Server error: Invalid class name in URI - ClassNotFoundException
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http://orebgu
+Connecting to: orebgu:8080
+Rendering Page...
+-----------
+
+
+Unknown host
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http://stilgar/
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Server error: Invalid class name in URI - ClassNotFoundException
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http://stilgar/akrjugb
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /akrjugb
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Server error: Invalid class name in URI - ClassNotFoundException
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http://stilgar/Index
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /Index
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Welcome to the Server on stilgar!
+The Forums![4]
+The Pizza Parlor![5]
+Nim[6]
+Fight in the Coliseum![7]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-7) Page Elements:
+2
+Enter Url:http://stilgar/Index/
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /Index/
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Server error: Invalid class name in URI - NoSuchMethodException
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+Rendering Page...
+-----------
+Welcome to the Server on stilgar!
+The Forums![4]
+The Pizza Parlor![5]
+Nim[6]
+Fight in the Coliseum![7]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-7) Page Elements:
+1
+Rendering Page...
+-----------
+Server error: Invalid class name in URI - ClassNotFoundException
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+Rendering Page...
+-----------
+Server error: Invalid class name in URI - ClassNotFoundException
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+Rendering Page...
+-----------
+
+
+Unknown host
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+Rendering Page...
+-----------
+Server error: Invalid class name in URI - ClassNotFoundException
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+Rendering Page...
+-----------
+
+
+Error communicating with server
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+Rendering Page...
+-----------
+
+
+Error communicating with server
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+No pages to go back to
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+No pages to go back to
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+No pages to go back to
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+No pages to go back to
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+3
+Good Bye!

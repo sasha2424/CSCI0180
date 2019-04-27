@@ -1,0 +1,215 @@
+CS18 Integrated Introduction to Computer Science Fisler
+Homework 6: Heaps
+Due: 5:00 PM, Apr 7, 2019
+Contents
+1 How to Hand In 1
+2 Scala Tuples 2
+3 Scala’s Built-In Priority Queues 2
+3.1 Creating Custom Orderings for Classes and Tuples . . . . . . . . . . . . . . . . . . . 3
+4 Sifting Up and Down (EXAM CONDITIONS) 3
+5 Text Processing (normal question, NOT exam conditions) 5
+Objectives
+By the end of this homework, you will be able to:
+ implement heaps, from soup to nuts
+ use priority queues to solve problems
+1 How to Hand In
+For this homework, you should do the tasks in the “Sifting Up and Down” and “Text
+Processing” sections. In order to hand in your solutions to these problems, they must be stored in
+appropriately-named files with the appropriate package header in an appropriately-named directory.
+The source code files should comprise the hw06.src package, and your solution code files, the
+hw06.sol package.
+Begin by copying the source code from the course directory to your own personal directory. That
+is, copy the following files from /course/cs0180/src/hw06/src/*.scala to ˜/course/
+cs0180/workspace/scalaproject/src/hw06/src:
+ IHeap.scala
+ AbsHeap.scala
+ AbsHeapTest.scala
+ ITextProcessor.scala
+CS18 Homework 6: Heaps Due: 5:00 PM, Apr 7, 2019
+ FileProcessor.scala
+Also copy the following file from /course/cs0180/sol/hw06/sol/*.scala to ˜/course/
+cs0180/workspace/scalaproject/sol/hw06/sol:
+ ConstructorTest.scala
+Do not alter these files!
+After completing this assignment, the following solution files should be in your
+˜/course/cs0180/workspace/scalaproject/sol/hw06/sol directory:
+ Sifting
+– Heap.scala containing the declaration
+class Heap[T <% Ordered[T]: ClassTag](override val initCapacity: Int) extends
+AbsHeap[T](initCapacity)
+– HeapTest.scala, containing class HeapTest(heap: IHeap[Int]), which your testing traits should extend; and object HeapTest, in which your tests are executed
+ Text Processor
+– TextProcessor.scala containing class TextProcessor(fileName: String)
+extends ITextProcessor
+– tp_test.txt containing documentation of your tests for TextProcessor
+To hand in your files, navigate to the ˜/course/cs0180/workspace/scalaproject/ directory, and run the command ‘cs018 handin hw06’. This will automatically hand in all of the
+above files. Once you have handed in your homework, you should receive an email, more or less
+immediately, confirming that fact. If you don’t receive this email, try handing in again, or ask the
+TAs what went wrong.
+2 Scala Tuples
+Sometimes, we don’t need all the infrastructure of a class. If all we need to do is create a single
+piece of data from other values, then pull out the pieces later, we might create just a tuple in Scala.
+For example, if we wanted a simple coordinate, we could write
+val coord = (3, 4)
+which creates a pair of two integers. The Scala tuples documentation shows you how to extract
+data from tuples.
+You are not required to use tuples in this assignment, but you may if you wish.
+2
+CS18 Homework 6: Heaps Due: 5:00 PM, Apr 7, 2019
+3 Scala’s Built-In Priority Queues
+As discussed in class, a priority queue is a data structure that organizes items based on a given
+priority instead of a simple Last-In-First-Out (LIFO) or First-In-First-Out (FIFO) ordering.
+Scala provides a built-in priority queue implementation. A priority queue is a mutable data structure.
+Objects join the queue in order to be serviced, and exit the queue after being serviced. To create a
+PriorityQueue in Scala—of type String, for example—you use the following syntax:
+import scala.collection.mutable.PriorityQueue
+val pq = new PriorityQueue[String]
+Then, to add items to pq, you use +=, as follows:
+pq += "Hello, World!"
+To remove the item in the queue with the highest priority, you invoke the method dequeue, which
+also returns the highest-priority item, as follows:
+val output = pq.dequeue()
+For more information about Scala’s priority queue API, visit the priority queue documentation page.
+3.1 Creating Custom Orderings for Classes and Tuples
+Some classes (like Int, Double, and String) have a built-in natural ordering that can be used to
+determine priority.
+However, there are times when we want to organize items or custom objects that we have created
+(and that don’t have natural priorities). In these situations, we need to specify how objects are
+compared or ordered.
+In class, we saw one way to do this: we have the class that we want to organize extend the Ordered
+trait, which means we define a compare method (there’s an example of this in the notes).
+How to we order tuples, such as our coordinates example? Since the tuple isn’t a class, we can’t
+define a compare method on it. Instead, we use other methods in the Ordering trait that let us
+create lightweight ordering specifications. The methods are called Ordering.on and Ordering.by,
+and look like the following:
+val newOrderingBy = Ordering[Int].by(x => ...)
+val newOrderingOn = Ordering[Int].on[myClass](myClass.priority)
+Here, we are defining an integer-based ordering, but on a component of a tuple or class rather than
+the entire object. A concrete example of using these methods is in the Ordering documentation.
+Note: Make sure you’re using scala version 2.11.8 to get this behavior of the on and by methods.
+3
+CS18 Homework 6: Heaps Due: 5:00 PM, Apr 7, 2019
+Problems
+4 Sifting Up and Down (EXAM CONDITIONS)
+THIS SECTION OF THE HOMEWORK IS UNDER EXAM CONDITIONS:
+ No collaboration of any kind is allowed on this portion of the homework.
+ TAs cannot answer any questions beyond clarification ones.
+ To avoid inconsistent answers across staff, all questions on this part of the assignment should
+be posted privately on Piazza. Piazza will default all posts to private while this assignment is
+out.
+In this problem, you will complete the implementation of heaps that was presented in class, but this
+time for a heap that prioritizes minimum value rather than maximum value. Specifically, you will
+implement the sifting methods (that move elements up and down the tree) needed to build and
+maintain a heap.
+We provide the bulk of the implementation for you, including:
+ IHeap.scala, which is the IHeap interface
+ AbsHeap.scala, an abstract class which stores the heap itself (i.e., the balanced array) and
+implements the methods in IHeap.scala
+The AbsHeap class implements getMin, deleteMin, and insert, but it remains abstract, because
+it does so without a working implementation of the helpers siftUp and siftDown (it only has the
+method stubs). Your job is to implement a working Heap by creating a concrete implementation of
+siftUp and siftDown in the Heap class.
+Task: Implement a class, Heap, which extends the AbsHeap class provided. That is, implement
+the siftUp and siftDown methods. Each should take as input an index that references an item in
+the heap that is possibly out of heap order, and should then restore heap order using the promotion
+and demotion strategies discussed in class. See lecture notes here and here.
+Note: Your imports and class declaration for Heap should look like:
+import scala.reflect.ClassTag
+class Heap[T <% Ordered[T]: ClassTag](
+override val initCapacity: Int) extends AbsHeap[T](initCapacity)
+Task: Test your heap implementation by following the testing framework laid out in Lab 9. That
+is, write your tests as traits that extend a basic class called HeapTest, and then mix them in when
+declaring an instances of HeapTest. Feel free to use some of the tests provided in the source code,
+but know that these tests are not fully exhaustive, so you must write your own as well.
+You are expected to test the getMin and deleteMin methods, which implicitly test insert, siftUp
+and siftDown. You do not need to explicitly test these latter three methods. You do need to test
+for any exceptional cases.
+4
+CS18 Homework 6: Heaps Due: 5:00 PM, Apr 7, 2019
+The following diagram shows an example of a minHeap on images, where the ordering of images is
+on the right side of the figure. The array under the tree shows the mapping from tree nodes to an
+array, as discussed in lecture.
+5 Text Processing (normal question, NOT exam conditions)
+Misty is going to be busy catching Pokemon and needs you to build a robotic impersonation of her
+to run her gym while she is gone. In order to make her robot more realistic, she needs to compile a
+list of her most common words so that the robot will talk like her. She asks you to do this for her
+by looking through her secret diary and keeping track of the words she used and how often she used
+them.
+Task: Write a class TextProcessor whose constructor takes as input a file name, and which
+implements the trait ITextProcessor, with the method textStats, that outputs to standard
+output (i.e., prints!): (i) the top 10 most common words in the file (ignoring capitalization differences),
+(ii) the number of times they each appear, and (iii) their proportions, relative to the other words in
+the document (reported to two decimal places). If two words appear the same number of times,
+they may appear in either order in the final output.
+Feel free to use the Java I/O classes you are accustomed to using, though the Scala Standard Library
+does have equivalents. We have provided the FileProcessor object, with a getText method,
+which you may use to read the text of a file into an array of Strings (one string per line in the file).
+Be sure to print your output in a format that is easy to read. Keep your users (namely, your TA
+staff!) in mind. We will be looking at your output manually during grading, so formatting output
+5
+CS18 Homework 6: Heaps Due: 5:00 PM, Apr 7, 2019
+so we can read it quickly will be quite helpful.
+You may use whichever data structures you wish when processing the input file (determining the
+words and the counts). You should use a built-in priority queue as part of sorting and producing
+the most common words.
+Note: For this problem, you might find the toLowerCase method in the String class useful; it
+returns the string it is called upon with its uppercase letters converted to lowercase.
+Note: Also recall that you can split up a string of words separated by spaces or punctuation into
+an array of individual words using split. For example:
+scala> "I love CS 18!!".split("[\\s\\W]+")
+Array[String] = Array(I, love, CS, 18)
+\s refers to any white space character (space, tab, newline, etc.), and \W refers to any nonalphanumeric character (anything but letters, numeric digits, and underscores).
+Note: This regex splits based on punctuation, so, for example, “don’t” becomes “don” and “t.”
+This is the appropriate, expected behavior: i.e., it is okay if your program treats contractions as
+separate words.
+Task: Write a main method in the companion object of your TextProcessor, which takes as input
+a filename as a command-line argument, and if the file exists, creates a TextProcessor on which
+to invoke textStats. Be sure to handle errors (e.g., “file not found”) gracefully (with exceptions),
+rather than just having your program crash.
+Task: Testing: Since your TextProcessor writes directly to standard output, writing check-expect
+based tests on the final output is difficult. However, you can (and should) create internal methods
+that process files and compute the data that eventually gets printed. These methods could be
+tested with check-expects (you don’t have to actually test them, as long as your code is organized
+such that you could test them). Separately, you can write systems tests on more than one corpus
+(without check-expects). Document your testing in your tp_test.txt file, and be sure to include
+a description of both input and expected output for each system test.
+Note: Grading here will check whether your code is structured in a way that one could write tests
+on the main computational parts of your code. To be clear, you are not expected to actually test
+those methods independently from your system tests, however.
+Note: In order to test your implementation, you should use some test corpora. We have provided
+several at /course/cs0180/src/poems/, but we strongly recommend writing and testing some
+of your own corpora to catch edge cases and test thoroughly! Be sure to include all corpora necessary
+for your tests to run in your ˜/course/cs0180/workspace/scalaproject/sol/hw06/sol/
+directory.
+The following two tables provide benchmark results for the othello and synonym files in the
+/course/cs018/src/poems/ folder so you can sanity check your output. Keep in mind that
+testing just these two files is not sufficient! We encourage you to test your TextProcessor on more
+than just the given corpora (on files of your own creation) to ensure full functionality.
+6
+CS18 Homework 6: Heaps Due: 5:00 PM, Apr 7, 2019
+word count %
+i 901 3.12
+and 809 2.80
+the 767 2.66
+to 600 2.08
+you 493 1.71
+of 467 1.62
+a 451 1.56
+my 430 1.49
+that 403 1.40
+iago 362 1.25
+word count %
+guy 1 5.88
+the 1 5.88
+5h411 1 5.88
+dude 1 5.88
+1337 1 5.88
+shall 1 5.88
+wh4t 1 5.88
+het 1 5.88
+sh4ll 1 5.88
+who 1 5.88
+Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any
+other CS18 document by filling out the anonymous feedback form: https://cs.brown.edu/
+courses/cs018/feedback.
+7

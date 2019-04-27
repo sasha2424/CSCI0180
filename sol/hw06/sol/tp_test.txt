@@ -1,0 +1,45 @@
+The following tests were performed:
+
+Inputs can be found in the files
+
+Each test produced the expected outputs and these 
+describe what each file tested specifically
+
+
+test1.txt
+ - The right counts are produced
+ - The right ratios are produced
+ - Can handle multiple lines and words
+
+test2.txt
+ - Can handle a single line
+ - The right counts are produced
+ - The right ratios are produced
+ 
+test3.txt
+ - Can handle over 10 unique words
+ - Can handle multiple spaces and new lines in a row
+ - The right counts are produced
+ - The right ratios are produced
+
+test4.txt
+ - Can handle an empty file
+ - Produces reasonable outputs
+ 
+test5.txt
+ - Can handle nonexisting files
+ 
+test6.txt
+ - The homework pdf
+ - Checking for edge cases or strange behavior
+ - Produces Reasonable output (generally common words and "scala")
+ 
+wiki.txt
+ - A wikipedia page
+ - Again to test for edge case inputs
+ 
+othello
+ - Verified that same counts and ratios produced as example
+
+synonyms
+ - Verified that same counts and ratios produced as example

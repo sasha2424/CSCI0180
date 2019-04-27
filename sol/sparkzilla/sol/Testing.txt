@@ -1,0 +1,27 @@
+System Testing:
+
+The following input sequences were tested and their corresponding outputs:
+
+
+Included in Test1.txt: Testing all kinds of URL inputs for correct exceptions
+and error messages/pages and back button.
+
+#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$
+
+Included in Test2.txt: Testing the 3 main actions and making sure that the 
+browser can handle garbage inputs. This includes exit with ctrl-D 
+and empty lines.
+
+
+#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$
+
+Included in Text3.txt: Making sure that the browser can handle forms
+and submitting data
+Also tests going back to page and data remaining in fields.
+Also tests link functionality.
+Also exit via action 3.
+
+#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$
+
+Included in Text3.txt: Testing back button across different servers.
+Going back from stilgar to thufir, the link on thufir takes us to thufir forum.

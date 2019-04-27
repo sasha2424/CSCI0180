@@ -1,0 +1,30 @@
+a b
+a
+b 
+ a
+ 
+ 
+ b 
+ a
+ b
+ baba bab ab ab a
+ b a
+ b ab aba
+ b ab a
+ 
+ 
+ b ab ab a
+ b ab ab ab ab 
+ 
+ ab ab a
+ b ab ab ab ab ab abb ab a ab abab ababa ba a b
+ a a bab ab aba abab
+ a ba ab ab ab abab 
+ a a bab ab abab a
+ b ab a bab ab aba ba
+  ab a bab ab ab 
+  ab ab  babababab a ab ababab ab abababbbabaabaab a ba ab
+  ab a abababa a ab
+  a 
+  
+  

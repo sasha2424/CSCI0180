@@ -1,0 +1,584 @@
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+-01
+Invalid Code
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+aruefyg
+Please input a valid number
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+4
+Invalid Code
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+
+Please input a valid number
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http://stilgar/Form  
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /Form
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Server error: Invalid class name in URI - ClassNotFoundException
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http://stilgar/Forum
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /Forum
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Welcome to the forums!
+155 Anonymous: 
+152 Adele: Hello
+151 Lgshdjtg: Hi
+149 name: try this again
+148 name: this is a message
+144 kslakdf: yuhg
+142 I like cake: 
+141 cats: i eat dogs&shit
+140 helloWord: hi
+139 b: c
+136 Anonymous: 
+135 Anonymous: 
+134 Neo: Give me the red morph
+133 b: c
+132 good morning america: f
+131 ary: kya ye chal raha hai
+130 Neo: Give me the red morph
+129 Anonymous: 
+127 Anonymous: hello from the CIT!
+124 cs18Student: We love CS!
+ 125 cs18Student: I wonder what CS I'll take next year
+123 Anonymous: 
+122 Anonymous: 
+121 Anonymous: 
+120 me:  idkk
+119 b: c
+118 hi: bye
+117 Anonymous: 
+ 128 ary: kya ye chal raha hai
+116 mom: i miss you honey
+115 Stephen Strange: We're in the endgame now...
+114 Messi: Man on a Mission
+113 b: c
+112 b: c
+111 ✦: nininin
+110 Jack: Ahoy maties
+109 Anonymous: 
+108 Drax: Why is Gamora?
+105 b: c
+104 b: c
+103 hello: bye
+102 blah: hi
+100 blah: blah
+99 cookeis & cream: verney wooley at 12
+98 Terminator: hi
+97 Terminator: MUHAHA
+95 CS18TAs: good luck muahaha
+94 Groot: I am Groooooooot!
+93 Hulk: Hulk Smash
+92 Hulk: Hulk Smash!
+91 Hulk: Hulk Smash!
+90 Thor: BRING ME THANOS
+89 hi: 
+88 Cap: Avengers Assemble
+ 147 Pizza: asjaoisf
+87 g: h
+86 me: bobby tales
+85 Anonymous: 
+84 asdf: fdfdsfasdfasdfasdfasdfadf
+83 gdfg: dgf
+82 gdfg: dgf
+81 benj: hello jjfkjlkj
+80 ben: jfkdjkljlkj
+79 dfskjfs: This project is very kewl
+78 ben: asdf
+77 House: Dumb message
+76 gfd: hi
+73 Anonymous: 
+72 Eric Andre: Time to deliver a pizza ball.
+68 name: message
+67 Moderator: Sorry wrong thread
+66 Anonymous: 
+64 fgh: fgh
+ 65 Moderator: Watch what you post
+63 four chords: vi IV I V
+62 ____: 
+61 leon: 
+59 Anonymous: 
+58 Anonymous: 
+55 Anonymous: 
+54 Anonymous: 
+53 Christina Paxson: creamies & cook
+51 Anonymous: 
+50 Anonymous: 
+49 Person: Testing for Spark
+48 Anonymous: 
+47 Anonymous: 
+46 name: message
+45 era: asdf
+44 asdfasdf: asdf
+43 epicGamer42069696969: I'm gonna take my horse to the old town road, I'm gonna ride till I can't no more, I'm gonna take my horse
+42 epicGamer42069696969: i think i finished ayyyyy
+41 dfe: test
+40 dfe: test
+39 g: h
+38 no: Selling lightly used soap
+37 Anonymous: 
+36 Anonymous: 
+35 Anonymous: 
+33 Anonymous: 
+32 Anonymous: 
+31 Anonymous: 
+30 Anonymous: 
+28 Only90sKidsRemember: I miss the old forum :(
+26 asking for a friend: thoughts on abortion?
+ 143 hi: 
+25 Upset individual: I'm back.  I have spoken to my retainer of lawyers, and they have concurred that my claim has a legal basis. Updates to follow. As of now please terminate all communication via this forum, the details of the subpoena are currently being finalized.
+24 Anonymous: 
+23 Anonymous: 
+22 autistic: screeching
+21 dragonite&gastly: ponyta vaporeon
+20 dragonite&gastly: ponyta vaporeon
+ 154 Adele: Yeesh
+ 153 Adele: Yeesh
+19 Anonymous: 
+18 Anonymous: 
+17 dragonite&gastly: ponyta vaporeon
+16 fearow: pidgey
+15 Anonymous: 
+14 Anonymous: 
+13 Anonymous: 
+12 Anonymous: 
+11 Anonymous: this class is full of cocounts
+10 Anonymous: 
+9 Anonymous: 
+8 name: name
+7 dragonite&gastly: ponyta vaporeon
+6 dragonite&gastly: ponyta vaporeon
+5 Anonymous: 
+4 fearow: pidgey
+3 fearow: pidgey
+2 Upset individual: I am an upset indivudal who actually enjoyed the banter on the previous forum.  The removal of this forum was not only unwarranted, but completely unjustified and represents an enormous extension of power on the part of the staff and faculty of CSCI0180. I will be in contact with relevant contacts, and legal action will be pursued in regards to the attack on my freedom of speech.  #VIVA
+ 138 rock tree: oops i did it again
+ 52 Nostalgia: Ugh there were so many good poll questions on the last forum. Bring those back. RIP Pollster2000
+ 29 Only90sKidsRemember: I miss the old forum :(
+1 i miss the old forums: 7
+ 57 OneLastTime: Saying so long from the sun lab. LONG LIVE THE FORUM!!!!
+ 34 eee: 
+  56 testing: mayb server
+   75 josiah c.: i like cookies & cream, but not together
+   74 josiah: i like cookies & cream, but not together
+   60 testing again: if this works imma yell yay
+    150 Aidan: messsssage
+    106 ;a: maeeesgage
+    101 Juan: MeSaGSEee
+     107 Not Juan: What's good Juan how's Carlos?
+ 27 ee: 
+  96 CS18TAs: i love you
+   145 kslakdf: jefkejfkefj
+   126 ary: SPARKY
+  69 ipsum: lorem
+   70 ipsum: dolor sit amet
+    137 blueno: hi
+     146 jefjef: klas;dkfjasdf
+    71 Anonymous: consectetur
+Post a reply:
+Parent post (0 for new topic):
+___________ [4]
+Your name:
+___________ [5]
+Your message:
+___________ [6]
+[Submit] [7]
+Go Home[8]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-8) Page Elements:
+9
+Invalid Code
+Rendering Page...
+-----------
+Welcome to the forums!
+155 Anonymous: 
+152 Adele: Hello
+151 Lgshdjtg: Hi
+149 name: try this again
+148 name: this is a message
+144 kslakdf: yuhg
+142 I like cake: 
+141 cats: i eat dogs&shit
+140 helloWord: hi
+139 b: c
+136 Anonymous: 
+135 Anonymous: 
+134 Neo: Give me the red morph
+133 b: c
+132 good morning america: f
+131 ary: kya ye chal raha hai
+130 Neo: Give me the red morph
+129 Anonymous: 
+127 Anonymous: hello from the CIT!
+124 cs18Student: We love CS!
+ 125 cs18Student: I wonder what CS I'll take next year
+123 Anonymous: 
+122 Anonymous: 
+121 Anonymous: 
+120 me:  idkk
+119 b: c
+118 hi: bye
+117 Anonymous: 
+ 128 ary: kya ye chal raha hai
+116 mom: i miss you honey
+115 Stephen Strange: We're in the endgame now...
+114 Messi: Man on a Mission
+113 b: c
+112 b: c
+111 ✦: nininin
+110 Jack: Ahoy maties
+109 Anonymous: 
+108 Drax: Why is Gamora?
+105 b: c
+104 b: c
+103 hello: bye
+102 blah: hi
+100 blah: blah
+99 cookeis & cream: verney wooley at 12
+98 Terminator: hi
+97 Terminator: MUHAHA
+95 CS18TAs: good luck muahaha
+94 Groot: I am Groooooooot!
+93 Hulk: Hulk Smash
+92 Hulk: Hulk Smash!
+91 Hulk: Hulk Smash!
+90 Thor: BRING ME THANOS
+89 hi: 
+88 Cap: Avengers Assemble
+ 147 Pizza: asjaoisf
+87 g: h
+86 me: bobby tales
+85 Anonymous: 
+84 asdf: fdfdsfasdfasdfasdfasdfadf
+83 gdfg: dgf
+82 gdfg: dgf
+81 benj: hello jjfkjlkj
+80 ben: jfkdjkljlkj
+79 dfskjfs: This project is very kewl
+78 ben: asdf
+77 House: Dumb message
+76 gfd: hi
+73 Anonymous: 
+72 Eric Andre: Time to deliver a pizza ball.
+68 name: message
+67 Moderator: Sorry wrong thread
+66 Anonymous: 
+64 fgh: fgh
+ 65 Moderator: Watch what you post
+63 four chords: vi IV I V
+62 ____: 
+61 leon: 
+59 Anonymous: 
+58 Anonymous: 
+55 Anonymous: 
+54 Anonymous: 
+53 Christina Paxson: creamies & cook
+51 Anonymous: 
+50 Anonymous: 
+49 Person: Testing for Spark
+48 Anonymous: 
+47 Anonymous: 
+46 name: message
+45 era: asdf
+44 asdfasdf: asdf
+43 epicGamer42069696969: I'm gonna take my horse to the old town road, I'm gonna ride till I can't no more, I'm gonna take my horse
+42 epicGamer42069696969: i think i finished ayyyyy
+41 dfe: test
+40 dfe: test
+39 g: h
+38 no: Selling lightly used soap
+37 Anonymous: 
+36 Anonymous: 
+35 Anonymous: 
+33 Anonymous: 
+32 Anonymous: 
+31 Anonymous: 
+30 Anonymous: 
+28 Only90sKidsRemember: I miss the old forum :(
+26 asking for a friend: thoughts on abortion?
+ 143 hi: 
+25 Upset individual: I'm back.  I have spoken to my retainer of lawyers, and they have concurred that my claim has a legal basis. Updates to follow. As of now please terminate all communication via this forum, the details of the subpoena are currently being finalized.
+24 Anonymous: 
+23 Anonymous: 
+22 autistic: screeching
+21 dragonite&gastly: ponyta vaporeon
+20 dragonite&gastly: ponyta vaporeon
+ 154 Adele: Yeesh
+ 153 Adele: Yeesh
+19 Anonymous: 
+18 Anonymous: 
+17 dragonite&gastly: ponyta vaporeon
+16 fearow: pidgey
+15 Anonymous: 
+14 Anonymous: 
+13 Anonymous: 
+12 Anonymous: 
+11 Anonymous: this class is full of cocounts
+10 Anonymous: 
+9 Anonymous: 
+8 name: name
+7 dragonite&gastly: ponyta vaporeon
+6 dragonite&gastly: ponyta vaporeon
+5 Anonymous: 
+4 fearow: pidgey
+3 fearow: pidgey
+2 Upset individual: I am an upset indivudal who actually enjoyed the banter on the previous forum.  The removal of this forum was not only unwarranted, but completely unjustified and represents an enormous extension of power on the part of the staff and faculty of CSCI0180. I will be in contact with relevant contacts, and legal action will be pursued in regards to the attack on my freedom of speech.  #VIVA
+ 138 rock tree: oops i did it again
+ 52 Nostalgia: Ugh there were so many good poll questions on the last forum. Bring those back. RIP Pollster2000
+ 29 Only90sKidsRemember: I miss the old forum :(
+1 i miss the old forums: 7
+ 57 OneLastTime: Saying so long from the sun lab. LONG LIVE THE FORUM!!!!
+ 34 eee: 
+  56 testing: mayb server
+   75 josiah c.: i like cookies & cream, but not together
+   74 josiah: i like cookies & cream, but not together
+   60 testing again: if this works imma yell yay
+    150 Aidan: messsssage
+    106 ;a: maeeesgage
+    101 Juan: MeSaGSEee
+     107 Not Juan: What's good Juan how's Carlos?
+ 27 ee: 
+  96 CS18TAs: i love you
+   145 kslakdf: jefkejfkefj
+   126 ary: SPARKY
+  69 ipsum: lorem
+   70 ipsum: dolor sit amet
+    137 blueno: hi
+     146 jefjef: klas;dkfjasdf
+    71 Anonymous: consectetur
+Post a reply:
+Parent post (0 for new topic):
+___________ [4]
+Your name:
+___________ [5]
+Your message:
+___________ [6]
+[Submit] [7]
+Go Home[8]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-8) Page Elements:
+-1
+Invalid Code
+Rendering Page...
+-----------
+Welcome to the forums!
+155 Anonymous: 
+152 Adele: Hello
+151 Lgshdjtg: Hi
+149 name: try this again
+148 name: this is a message
+144 kslakdf: yuhg
+142 I like cake: 
+141 cats: i eat dogs&shit
+140 helloWord: hi
+139 b: c
+136 Anonymous: 
+135 Anonymous: 
+134 Neo: Give me the red morph
+133 b: c
+132 good morning america: f
+131 ary: kya ye chal raha hai
+130 Neo: Give me the red morph
+129 Anonymous: 
+127 Anonymous: hello from the CIT!
+124 cs18Student: We love CS!
+ 125 cs18Student: I wonder what CS I'll take next year
+123 Anonymous: 
+122 Anonymous: 
+121 Anonymous: 
+120 me:  idkk
+119 b: c
+118 hi: bye
+117 Anonymous: 
+ 128 ary: kya ye chal raha hai
+116 mom: i miss you honey
+115 Stephen Strange: We're in the endgame now...
+114 Messi: Man on a Mission
+113 b: c
+112 b: c
+111 ✦: nininin
+110 Jack: Ahoy maties
+109 Anonymous: 
+108 Drax: Why is Gamora?
+105 b: c
+104 b: c
+103 hello: bye
+102 blah: hi
+100 blah: blah
+99 cookeis & cream: verney wooley at 12
+98 Terminator: hi
+97 Terminator: MUHAHA
+95 CS18TAs: good luck muahaha
+94 Groot: I am Groooooooot!
+93 Hulk: Hulk Smash
+92 Hulk: Hulk Smash!
+91 Hulk: Hulk Smash!
+90 Thor: BRING ME THANOS
+89 hi: 
+88 Cap: Avengers Assemble
+ 147 Pizza: asjaoisf
+87 g: h
+86 me: bobby tales
+85 Anonymous: 
+84 asdf: fdfdsfasdfasdfasdfasdfadf
+83 gdfg: dgf
+82 gdfg: dgf
+81 benj: hello jjfkjlkj
+80 ben: jfkdjkljlkj
+79 dfskjfs: This project is very kewl
+78 ben: asdf
+77 House: Dumb message
+76 gfd: hi
+73 Anonymous: 
+72 Eric Andre: Time to deliver a pizza ball.
+68 name: message
+67 Moderator: Sorry wrong thread
+66 Anonymous: 
+64 fgh: fgh
+ 65 Moderator: Watch what you post
+63 four chords: vi IV I V
+62 ____: 
+61 leon: 
+59 Anonymous: 
+58 Anonymous: 
+55 Anonymous: 
+54 Anonymous: 
+53 Christina Paxson: creamies & cook
+51 Anonymous: 
+50 Anonymous: 
+49 Person: Testing for Spark
+48 Anonymous: 
+47 Anonymous: 
+46 name: message
+45 era: asdf
+44 asdfasdf: asdf
+43 epicGamer42069696969: I'm gonna take my horse to the old town road, I'm gonna ride till I can't no more, I'm gonna take my horse
+42 epicGamer42069696969: i think i finished ayyyyy
+41 dfe: test
+40 dfe: test
+39 g: h
+38 no: Selling lightly used soap
+37 Anonymous: 
+36 Anonymous: 
+35 Anonymous: 
+33 Anonymous: 
+32 Anonymous: 
+31 Anonymous: 
+30 Anonymous: 
+28 Only90sKidsRemember: I miss the old forum :(
+26 asking for a friend: thoughts on abortion?
+ 143 hi: 
+25 Upset individual: I'm back.  I have spoken to my retainer of lawyers, and they have concurred that my claim has a legal basis. Updates to follow. As of now please terminate all communication via this forum, the details of the subpoena are currently being finalized.
+24 Anonymous: 
+23 Anonymous: 
+22 autistic: screeching
+21 dragonite&gastly: ponyta vaporeon
+20 dragonite&gastly: ponyta vaporeon
+ 154 Adele: Yeesh
+ 153 Adele: Yeesh
+19 Anonymous: 
+18 Anonymous: 
+17 dragonite&gastly: ponyta vaporeon
+16 fearow: pidgey
+15 Anonymous: 
+14 Anonymous: 
+13 Anonymous: 
+12 Anonymous: 
+11 Anonymous: this class is full of cocounts
+10 Anonymous: 
+9 Anonymous: 
+8 name: name
+7 dragonite&gastly: ponyta vaporeon
+6 dragonite&gastly: ponyta vaporeon
+5 Anonymous: 
+4 fearow: pidgey
+3 fearow: pidgey
+2 Upset individual: I am an upset indivudal who actually enjoyed the banter on the previous forum.  The removal of this forum was not only unwarranted, but completely unjustified and represents an enormous extension of power on the part of the staff and faculty of CSCI0180. I will be in contact with relevant contacts, and legal action will be pursued in regards to the attack on my freedom of speech.  #VIVA
+ 138 rock tree: oops i did it again
+ 52 Nostalgia: Ugh there were so many good poll questions on the last forum. Bring those back. RIP Pollster2000
+ 29 Only90sKidsRemember: I miss the old forum :(
+1 i miss the old forums: 7
+ 57 OneLastTime: Saying so long from the sun lab. LONG LIVE THE FORUM!!!!
+ 34 eee: 
+  56 testing: mayb server
+   75 josiah c.: i like cookies & cream, but not together
+   74 josiah: i like cookies & cream, but not together
+   60 testing again: if this works imma yell yay
+    150 Aidan: messsssage
+    106 ;a: maeeesgage
+    101 Juan: MeSaGSEee
+     107 Not Juan: What's good Juan how's Carlos?
+ 27 ee: 
+  96 CS18TAs: i love you
+   145 kslakdf: jefkejfkefj
+   126 ary: SPARKY
+  69 ipsum: lorem
+   70 ipsum: dolor sit amet
+    137 blueno: hi
+     146 jefjef: klas;dkfjasdf
+    71 Anonymous: consectetur
+Post a reply:
+Parent post (0 for new topic):
+___________ [4]
+Your name:
+___________ [5]
+Your message:
+___________ [6]
+[Submit] [7]
+Go Home[8]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-8) Page Elements:
+Good Bye!

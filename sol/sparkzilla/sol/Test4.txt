@@ -1,0 +1,687 @@
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http://thufir/Forum
+Connecting to: thufir:8080
+Connected
+Requesting page and sending data (if need be): /Forum
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Welcome to the forums!
+194 asd: 
+193 asd: as
+192 a: 
+191 Anonymous: 
+190 Anonymous: 
+189 WE OUTTA HERE: DONE
+184 a & b: 555
+183 %^&*: #@$()[]~
+182 Thing1: 
+180 ak: 
+179 if & y: b
+178 if & y: b
+177 CHILD: WHERES DAD
+176 if & y: 
+175 Anonymous: 
+174 Anonymous: 
+172 name: 
+171 ak: 
+170 Anonymous: 
+169 Anonymous: 
+168 Anonymous: 
+167 Anonymous: 
+166 arose: submitted
+165 Anonymous: 
+164 Anonymous: 
+163 Anonymous: 
+162 B: Writing sys tests
+161 DONE with SPARKZILLLLLLLLLLLLLLLLLA: this is a message
+160 Anonymous: 
+159 he: 
+158 riley: how do u even exception safety
+157 Yeah Nah: .--. ..- ... ... -.-- .-.. .. .--. ...
+156 Anonymous: 
+155 brandon: hi
+154 hi: goodbye
+153 Anonymous: 
+152 Me: Hi
+151 Anonymous: 
+150 asd: asd
+149 Anonymous: 
+148 Anonymous: 
+147 Anonymous: 
+146 Anonymous: 
+144 Anonymous: 
+143 ff: tt
+142 uu: 3
+141 Anonymous: 
+139 Anonymous: 
+138 Anonymous: 
+137 Justin: Hey guys!
+136 helloWorld: hello
+135 Morgann: hi
+134 Anonymous: 
+133 Anonymous: 
+132 Anonymous: 
+131 hfjdkr76584768594&^%&%^*^&%*&^$%$^%$#: 
+130 &^%$&^%$&*: 
+129 Anonymous: 
+128 Anonymous: 
+127 Test Name Override: Test Message
+126 Anonymous: 
+125 Justin: Hey guys!
+124 Anonymous: 
+123 no: 
+122 no: tired
+121 Anonymous: 
+120 SONGBGOB: woo
+119 4: wee
+118 Anonymous: 
+117 Anonymous: 
+116 Anonymous: 
+115 Anonymous: 
+114 Anonymous: 
+113 Anonymous: 
+112 None: None
+111 got em: and thats it
+110 is a: form
+109 I am the King: None
+108 I am the King: WHo are YOU
+107 j: 
+106 k: 
+105 k: 
+104 None: None
+103 Anonymous: 
+102 Anonymous: 
+101 j: 
+100 Anonymous: 
+99 Anonymous: 
+98 Anonymous: 
+97 Anonymous: 
+96 Anonymous: 
+95 Anonymous: 
+94 Anonymous: 
+93 Anonymous: 
+92 Anonymous: 
+91 Anonymous: 
+90 Anonymous: 
+89 Anonymous: 
+88 Anonymous: 
+87 Anonymous: 
+86 Anonymous: 
+85 Anonymous: 
+84 ak: ak
+83 willYUM: this is our message ok
+82 Anonymous: 
+81 Anonymous: 
+80 Anonymous: 
+79 Anonymous: 
+78 j: 
+77 testName: test message
+76 Anonymous: 
+75 WILL: WHAT
+74 Anonymous: 
+73 WILL: OKOKOK
+72 Anonymous: 
+71 Anonymous: 
+69 Anonymous: 
+63 Anonymous: 
+56 Anonymous: 
+55 Anonymous: 
+54 graffiti artist: ░░░░░░░░▄▄▄▀▀▀▄▄███▄░░░░░░░░░░░░░░
+53 Anonymous: 
+ 70 graffiti artist: feelsbadman, it's vertically inverted
+ 68 graffiti artist: ░░░░░arrived░░░░░░░░░░░░█▀██████░
+ 67 graffiti artist: ░░░░░░has░░░░░░░░▀▄▄███████████████ 
+ 66 graffiti artist: ░░░░toucan░░░░░░▀▄░░░▐█████████████▄ 
+ 65 graffiti artist: ░░░░░le░░░░░░░▐░░░░▐█████████████▄
+ 64 graffiti artist: ░░░░░░░░░░░░░▐░░░░▐███████████▄░░░
+ 62 graffiti artist: ░▌▄▄▀▀░░░░░░░░▌░░░░▄███████▄░░░░░░
+ 61 graffiti artist: ░▐█▀▄▀▄▄▄▄▀▀▀▀▌░░░░░▐█▄░░░░░░░░░░░
+ 60 graffiti artist: ░░▄█░░▄▀▀▒▒▒▒▒▄▐░░░░█▌░░░░░░░░░░░░
+ 59 graffiti artist: ░░░▄▀░░░░▄▄███░▌▀▀░▀█░░░░░░░░░░░░░
+ 58 graffiti artist: ░░░░░▄▀▀░░░░░░░▐░▀██▌░░░░░░░░░░░░░
+ 57 graffiti artist: ░░░░░░░░▄▄▄▀▀▀▄▄███▄░░░░░░░░░░░░░░
+52 Anonymous: 
+51 Anonymous: 
+50 Anonymous: 
+49 Anonymous: 
+48 Anonymous: 
+47 Anonymous: 
+46 Anonymous: 
+45 Anonymous: 
+44 Anonymous: 
+43 Anonymous: 
+42 Anonymous: 
+41 Anonymous: 
+40 Anonymous: 
+39 Anonymous: 
+38 Anonymous: 
+37 Anonymous: 
+36 jj: 
+35 Anonymous: 
+34 Testing: test msg
+33 Anonymous: 
+32 ✦: :)
+ 145 YES THIS WORKS!: THIS MESSAGE WORKS
+29 Anonymous: 
+27 moe$$: hello there 18'ers
+ 140 lol: hello to you too
+26 Anonymous: 
+25 Anonymous: 
+24 Anonymous: 
+22 Anonymous: 
+20 Anonymous: 
+19 Anonymous: 
+17 Anonymous: 
+16 Anonymous: 
+15 NAME ME: THIS IS A MESSAGE
+ 181 Thing1: Hi!
+14 Anonymous: 
+13 billy bob: Oi Norton, Whats doin?
+12 Anonymous: 
+11 billy bob: yEe-YEE
+10 Afroman: Kentucky
+ 188 name: testing testing 123
+ 186 name: test message
+ 30 name1: message2
+ 23 name: test message
+9 the chats: oi
+8 Anonymous: 
+7 Anonymous: 
+6 Anonymous: 
+5 Anonymous: 
+4 jfirk: 
+3 Anonymous: 
+2 Anonymous: 
+1 Anonymous: 
+ 187 name: hello
+ 185 name: message
+ 173 Kathi Fisler: You guys are doing great! Sparkzilla is so fun. I love pokemon. :)))
+ 31 name2: message3
+ 28 name1: message1
+ 21 name: message
+ 18 name: message
+Post a reply:
+Parent post (0 for new topic):
+___________ [4]
+Your name:
+___________ [5]
+Your message:
+___________ [6]
+[Submit] [7]
+Go Home[8]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-8) Page Elements:
+8
+Connecting to: thufir:8080
+Connected
+Requesting page and sending data (if need be): /Index
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Welcome to the Server on thufir!
+The Forums![4]
+The Pizza Parlor![5]
+Nim[6]
+Fight in the Coliseum![7]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-7) Page Elements:
+2
+Enter Url:http://stilgar/Index
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /Index
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Welcome to the Server on stilgar!
+The Forums![4]
+The Pizza Parlor![5]
+Nim[6]
+Fight in the Coliseum![7]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-7) Page Elements:
+4
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /Forum
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Welcome to the forums!
+178 fsfew: sfewrew
+177 ak: ak
+176 ak: ak
+175 Miguel & Charlotte: test
+174 3253: ewfew
+170 Anonymous: 
+169 Anonymous: 
+168 Anonymous: 
+166 cookies & cream!: is the best best best
+164 ajskldf: aksdfjakls;djfa;ksdjfklas
+162 Anonymous: 
+161 Anonymous: 
+160 tim: hello
+159 tim: hello
+156 This be my name: message
+155 Anonymous: 
+152 Adele: Hello
+151 Lgshdjtg: Hi
+149 name: try this again
+148 name: this is a message
+144 kslakdf: yuhg
+142 I like cake: 
+141 cats: i eat dogs&shit
+140 helloWord: hi
+139 b: c
+136 Anonymous: 
+135 Anonymous: 
+134 Neo: Give me the red morph
+133 b: c
+132 good morning america: f
+131 ary: kya ye chal raha hai
+130 Neo: Give me the red morph
+129 Anonymous: 
+127 Anonymous: hello from the CIT!
+124 cs18Student: We love CS!
+ 125 cs18Student: I wonder what CS I'll take next year
+123 Anonymous: 
+122 Anonymous: 
+121 Anonymous: 
+120 me:  idkk
+119 b: c
+118 hi: bye
+117 Anonymous: 
+ 128 ary: kya ye chal raha hai
+116 mom: i miss you honey
+115 Stephen Strange: We're in the endgame now...
+114 Messi: Man on a Mission
+113 b: c
+112 b: c
+111 ✦: nininin
+110 Jack: Ahoy maties
+109 Anonymous: 
+108 Drax: Why is Gamora?
+105 b: c
+104 b: c
+103 hello: bye
+102 blah: hi
+100 blah: blah
+99 cookeis & cream: verney wooley at 12
+98 Terminator: hi
+97 Terminator: MUHAHA
+95 CS18TAs: good luck muahaha
+94 Groot: I am Groooooooot!
+93 Hulk: Hulk Smash
+92 Hulk: Hulk Smash!
+91 Hulk: Hulk Smash!
+90 Thor: BRING ME THANOS
+89 hi: 
+88 Cap: Avengers Assemble
+ 147 Pizza: asjaoisf
+87 g: h
+86 me: bobby tales
+85 Anonymous: 
+84 asdf: fdfdsfasdfasdfasdfasdfadf
+83 gdfg: dgf
+82 gdfg: dgf
+81 benj: hello jjfkjlkj
+80 ben: jfkdjkljlkj
+79 dfskjfs: This project is very kewl
+78 ben: asdf
+77 House: Dumb message
+76 gfd: hi
+73 Anonymous: 
+72 Eric Andre: Time to deliver a pizza ball.
+68 name: message
+67 Moderator: Sorry wrong thread
+66 Anonymous: 
+64 fgh: fgh
+ 65 Moderator: Watch what you post
+63 four chords: vi IV I V
+62 ____: 
+61 leon: 
+59 Anonymous: 
+58 Anonymous: 
+55 Anonymous: 
+54 Anonymous: 
+53 Christina Paxson: creamies & cook
+51 Anonymous: 
+50 Anonymous: 
+49 Person: Testing for Spark
+48 Anonymous: 
+47 Anonymous: 
+46 name: message
+45 era: asdf
+44 asdfasdf: asdf
+43 epicGamer42069696969: I'm gonna take my horse to the old town road, I'm gonna ride till I can't no more, I'm gonna take my horse
+42 epicGamer42069696969: i think i finished ayyyyy
+41 dfe: test
+40 dfe: test
+39 g: h
+38 no: Selling lightly used soap
+37 Anonymous: 
+36 Anonymous: 
+35 Anonymous: 
+33 Anonymous: 
+32 Anonymous: 
+31 Anonymous: 
+30 Anonymous: 
+28 Only90sKidsRemember: I miss the old forum :(
+26 asking for a friend: thoughts on abortion?
+ 143 hi: 
+25 Upset individual: I'm back.  I have spoken to my retainer of lawyers, and they have concurred that my claim has a legal basis. Updates to follow. As of now please terminate all communication via this forum, the details of the subpoena are currently being finalized.
+24 Anonymous: 
+23 Anonymous: 
+22 autistic: screeching
+21 dragonite&gastly: ponyta vaporeon
+20 dragonite&gastly: ponyta vaporeon
+ 154 Adele: Yeesh
+ 153 Adele: Yeesh
+19 Anonymous: 
+18 Anonymous: 
+17 dragonite&gastly: ponyta vaporeon
+16 fearow: pidgey
+15 Anonymous: 
+14 Anonymous: 
+13 Anonymous: 
+12 Anonymous: 
+11 Anonymous: this class is full of cocounts
+10 Anonymous: 
+ 172 name1: message2
+9 Anonymous: 
+8 name: name
+7 dragonite&gastly: ponyta vaporeon
+ 158 alsj: afjd
+ 157 alsj: afjd
+6 dragonite&gastly: ponyta vaporeon
+5 Anonymous: 
+ 173 name2: message3
+ 171 name1: message1
+4 fearow: pidgey
+ 163 5: 6
+3 fearow: pidgey
+2 Upset individual: I am an upset indivudal who actually enjoyed the banter on the previous forum.  The removal of this forum was not only unwarranted, but completely unjustified and represents an enormous extension of power on the part of the staff and faculty of CSCI0180. I will be in contact with relevant contacts, and legal action will be pursued in regards to the attack on my freedom of speech.  #VIVA
+ 165 Cookies & cream: is the best
+ 138 rock tree: oops i did it again
+ 52 Nostalgia: Ugh there were so many good poll questions on the last forum. Bring those back. RIP Pollster2000
+ 29 Only90sKidsRemember: I miss the old forum :(
+1 i miss the old forums: 7
+ 57 OneLastTime: Saying so long from the sun lab. LONG LIVE THE FORUM!!!!
+ 34 eee: 
+  56 testing: mayb server
+   75 josiah c.: i like cookies & cream, but not together
+   74 josiah: i like cookies & cream, but not together
+   60 testing again: if this works imma yell yay
+    150 Aidan: messsssage
+    106 ;a: maeeesgage
+    101 Juan: MeSaGSEee
+     107 Not Juan: What's good Juan how's Carlos?
+ 27 ee: 
+  96 CS18TAs: i love you
+   145 kslakdf: jefkejfkefj
+   126 ary: SPARKY
+  69 ipsum: lorem
+   70 ipsum: dolor sit amet
+    137 blueno: hi
+     146 jefjef: klas;dkfjasdf
+    71 Anonymous: consectetur
+     167 Jam: testing for sparkzilla
+Post a reply:
+Parent post (0 for new topic):
+___________ [4]
+Your name:
+___________ [5]
+Your message:
+___________ [6]
+[Submit] [7]
+Go Home[8]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-8) Page Elements:
+1
+Rendering Page...
+-----------
+Welcome to the Server on stilgar!
+The Forums![4]
+The Pizza Parlor![5]
+Nim[6]
+Fight in the Coliseum![7]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-7) Page Elements:
+1
+Rendering Page...
+-----------
+Welcome to the Server on thufir!
+The Forums![4]
+The Pizza Parlor![5]
+Nim[6]
+Fight in the Coliseum![7]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-7) Page Elements:
+4
+Connecting to: thufir:8080
+Connected
+Requesting page and sending data (if need be): /Forum
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Welcome to the forums!
+194 asd: 
+193 asd: as
+192 a: 
+191 Anonymous: 
+190 Anonymous: 
+189 WE OUTTA HERE: DONE
+184 a & b: 555
+183 %^&*: #@$()[]~
+182 Thing1: 
+180 ak: 
+179 if & y: b
+178 if & y: b
+177 CHILD: WHERES DAD
+176 if & y: 
+175 Anonymous: 
+174 Anonymous: 
+172 name: 
+171 ak: 
+170 Anonymous: 
+169 Anonymous: 
+168 Anonymous: 
+167 Anonymous: 
+166 arose: submitted
+165 Anonymous: 
+164 Anonymous: 
+163 Anonymous: 
+162 B: Writing sys tests
+161 DONE with SPARKZILLLLLLLLLLLLLLLLLA: this is a message
+160 Anonymous: 
+159 he: 
+158 riley: how do u even exception safety
+157 Yeah Nah: .--. ..- ... ... -.-- .-.. .. .--. ...
+156 Anonymous: 
+155 brandon: hi
+154 hi: goodbye
+153 Anonymous: 
+152 Me: Hi
+151 Anonymous: 
+150 asd: asd
+149 Anonymous: 
+148 Anonymous: 
+147 Anonymous: 
+146 Anonymous: 
+144 Anonymous: 
+143 ff: tt
+142 uu: 3
+141 Anonymous: 
+139 Anonymous: 
+138 Anonymous: 
+137 Justin: Hey guys!
+136 helloWorld: hello
+135 Morgann: hi
+134 Anonymous: 
+133 Anonymous: 
+132 Anonymous: 
+131 hfjdkr76584768594&^%&%^*^&%*&^$%$^%$#: 
+130 &^%$&^%$&*: 
+129 Anonymous: 
+128 Anonymous: 
+127 Test Name Override: Test Message
+126 Anonymous: 
+125 Justin: Hey guys!
+124 Anonymous: 
+123 no: 
+122 no: tired
+121 Anonymous: 
+120 SONGBGOB: woo
+119 4: wee
+118 Anonymous: 
+117 Anonymous: 
+116 Anonymous: 
+115 Anonymous: 
+114 Anonymous: 
+113 Anonymous: 
+112 None: None
+111 got em: and thats it
+110 is a: form
+109 I am the King: None
+108 I am the King: WHo are YOU
+107 j: 
+106 k: 
+105 k: 
+104 None: None
+103 Anonymous: 
+102 Anonymous: 
+101 j: 
+100 Anonymous: 
+99 Anonymous: 
+98 Anonymous: 
+97 Anonymous: 
+96 Anonymous: 
+95 Anonymous: 
+94 Anonymous: 
+93 Anonymous: 
+92 Anonymous: 
+91 Anonymous: 
+90 Anonymous: 
+89 Anonymous: 
+88 Anonymous: 
+87 Anonymous: 
+86 Anonymous: 
+85 Anonymous: 
+84 ak: ak
+83 willYUM: this is our message ok
+82 Anonymous: 
+81 Anonymous: 
+80 Anonymous: 
+79 Anonymous: 
+78 j: 
+77 testName: test message
+76 Anonymous: 
+75 WILL: WHAT
+74 Anonymous: 
+73 WILL: OKOKOK
+72 Anonymous: 
+71 Anonymous: 
+69 Anonymous: 
+63 Anonymous: 
+56 Anonymous: 
+55 Anonymous: 
+54 graffiti artist: ░░░░░░░░▄▄▄▀▀▀▄▄███▄░░░░░░░░░░░░░░
+53 Anonymous: 
+ 70 graffiti artist: feelsbadman, it's vertically inverted
+ 68 graffiti artist: ░░░░░arrived░░░░░░░░░░░░█▀██████░
+ 67 graffiti artist: ░░░░░░has░░░░░░░░▀▄▄███████████████ 
+ 66 graffiti artist: ░░░░toucan░░░░░░▀▄░░░▐█████████████▄ 
+ 65 graffiti artist: ░░░░░le░░░░░░░▐░░░░▐█████████████▄
+ 64 graffiti artist: ░░░░░░░░░░░░░▐░░░░▐███████████▄░░░
+ 62 graffiti artist: ░▌▄▄▀▀░░░░░░░░▌░░░░▄███████▄░░░░░░
+ 61 graffiti artist: ░▐█▀▄▀▄▄▄▄▀▀▀▀▌░░░░░▐█▄░░░░░░░░░░░
+ 60 graffiti artist: ░░▄█░░▄▀▀▒▒▒▒▒▄▐░░░░█▌░░░░░░░░░░░░
+ 59 graffiti artist: ░░░▄▀░░░░▄▄███░▌▀▀░▀█░░░░░░░░░░░░░
+ 58 graffiti artist: ░░░░░▄▀▀░░░░░░░▐░▀██▌░░░░░░░░░░░░░
+ 57 graffiti artist: ░░░░░░░░▄▄▄▀▀▀▄▄███▄░░░░░░░░░░░░░░
+52 Anonymous: 
+51 Anonymous: 
+50 Anonymous: 
+49 Anonymous: 
+48 Anonymous: 
+47 Anonymous: 
+46 Anonymous: 
+45 Anonymous: 
+44 Anonymous: 
+43 Anonymous: 
+42 Anonymous: 
+41 Anonymous: 
+40 Anonymous: 
+39 Anonymous: 
+38 Anonymous: 
+37 Anonymous: 
+36 jj: 
+35 Anonymous: 
+34 Testing: test msg
+33 Anonymous: 
+32 ✦: :)
+ 145 YES THIS WORKS!: THIS MESSAGE WORKS
+29 Anonymous: 
+27 moe$$: hello there 18'ers
+ 140 lol: hello to you too
+26 Anonymous: 
+25 Anonymous: 
+24 Anonymous: 
+22 Anonymous: 
+20 Anonymous: 
+19 Anonymous: 
+17 Anonymous: 
+16 Anonymous: 
+15 NAME ME: THIS IS A MESSAGE
+ 181 Thing1: Hi!
+14 Anonymous: 
+13 billy bob: Oi Norton, Whats doin?
+12 Anonymous: 
+11 billy bob: yEe-YEE
+10 Afroman: Kentucky
+ 188 name: testing testing 123
+ 186 name: test message
+ 30 name1: message2
+ 23 name: test message
+9 the chats: oi
+8 Anonymous: 
+7 Anonymous: 
+6 Anonymous: 
+5 Anonymous: 
+4 jfirk: 
+3 Anonymous: 
+2 Anonymous: 
+1 Anonymous: 
+ 187 name: hello
+ 185 name: message
+ 173 Kathi Fisler: You guys are doing great! Sparkzilla is so fun. I love pokemon. :)))
+ 31 name2: message3
+ 28 name1: message1
+ 21 name: message
+ 18 name: message
+Post a reply:
+Parent post (0 for new topic):
+___________ [4]
+Your name:
+___________ [5]
+Your message:
+___________ [6]
+[Submit] [7]
+Go Home[8]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-8) Page Elements:

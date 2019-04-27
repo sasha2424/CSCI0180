@@ -1,0 +1,397 @@
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+
+Please input a valid number
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+2
+Enter Url:http://stilgar/Index
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /Index
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Welcome to the Server on stilgar!
+The Forums![4]
+The Pizza Parlor![5]
+Nim[6]
+Fight in the Coliseum![7]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-7) Page Elements:
+5
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /Pizza
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Welcome to the pizza parlor!
+ What size pizza do you want? (Small, Medium, Large)
+___________ [4]
+[Submit] [5]
+Go Home [6]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-6) Page Elements:
+4  
+Enter value for field size: Medium
+Rendering Page...
+-----------
+Welcome to the pizza parlor!
+ What size pizza do you want? (Small, Medium, Large)
+__Medium__ [4]
+[Submit] [5]
+Go Home [6]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-6) Page Elements:
+5
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /id:7796687402/modifyOrder
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+This is your order.
+ Size: Medium
+ Change size (Small, Medium, Large)
+___________ [4]
+ Add topping
+___________ [5]
+ Remove topping
+___________ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+1
+Rendering Page...
+-----------
+Welcome to the pizza parlor!
+ What size pizza do you want? (Small, Medium, Large)
+__Medium__ [4]
+[Submit] [5]
+Go Home [6]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-6) Page Elements:
+5
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /id:7796687402/modifyOrder
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+This is your order.
+ Size: Medium
+ Change size (Small, Medium, Large)
+___________ [4]
+ Add topping
+___________ [5]
+ Remove topping
+___________ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+4
+Enter value for field size: Small
+Rendering Page...
+-----------
+This is your order.
+ Size: Medium
+ Change size (Small, Medium, Large)
+__Small__ [4]
+ Add topping
+___________ [5]
+ Remove topping
+___________ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+5
+Enter value for field addTopping: Strawberry
+Rendering Page...
+-----------
+This is your order.
+ Size: Medium
+ Change size (Small, Medium, Large)
+__Small__ [4]
+ Add topping
+__Strawberry__ [5]
+ Remove topping
+___________ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+6
+Enter value for field removeTopping: Bread     
+Rendering Page...
+-----------
+This is your order.
+ Size: Medium
+ Change size (Small, Medium, Large)
+__Small__ [4]
+ Add topping
+__Strawberry__ [5]
+ Remove topping
+__Bread__ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+8
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /id:11174840272/finishOrder
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Sorry we could not process your order, we are out of the following:
+Dough
+Place a new order. [4]
+Go Home [5]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-5) Page Elements:
+1
+Rendering Page...
+-----------
+This is your order.
+ Size: Medium
+ Change size (Small, Medium, Large)
+__Small__ [4]
+ Add topping
+__Strawberry__ [5]
+ Remove topping
+__Bread__ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+7
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /id:11174840272/modifyOrder
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+This is your order.
+ Size: Small
+Topping: Strawberry
+ Change size (Small, Medium, Large)
+___________ [4]
+ Add topping
+___________ [5]
+ Remove topping
+___________ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+1
+Rendering Page...
+-----------
+This is your order.
+ Size: Medium
+ Change size (Small, Medium, Large)
+__Small__ [4]
+ Add topping
+__Strawberry__ [5]
+ Remove topping
+__Bread__ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+5
+Enter value for field addTopping: Pasta            
+Rendering Page...
+-----------
+This is your order.
+ Size: Medium
+ Change size (Small, Medium, Large)
+__Small__ [4]
+ Add topping
+__Pasta__ [5]
+ Remove topping
+__Bread__ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+7
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /id:11174840272/modifyOrder
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+This is your order.
+ Size: Small
+Topping: Pasta
+ Change size (Small, Medium, Large)
+___________ [4]
+ Add topping
+___________ [5]
+ Remove topping
+___________ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+8
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /id:-19581949612/finishOrder
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Sorry we could not process your order, we are out of the following:
+Pasta
+Place a new order. [4]
+Go Home [5]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-5) Page Elements:
+5
+Connecting to: stilgar:8080
+Connected
+Requesting page and sending data (if need be): /Index
+Request SentServer responded with OK
+Parsing Page...
+Rendering Page...
+-----------
+Welcome to the Server on stilgar!
+The Forums![4]
+The Pizza Parlor![5]
+Nim[6]
+Fight in the Coliseum![7]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-7) Page Elements:
+1
+Rendering Page...
+-----------
+Sorry we could not process your order, we are out of the following:
+Pasta
+Place a new order. [4]
+Go Home [5]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-5) Page Elements:
+1
+Rendering Page...
+-----------
+This is your order.
+ Size: Small
+Topping: Pasta
+ Change size (Small, Medium, Large)
+___________ [4]
+ Add topping
+___________ [5]
+ Remove topping
+___________ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+1
+Rendering Page...
+-----------
+This is your order.
+ Size: Medium
+ Change size (Small, Medium, Large)
+__Small__ [4]
+ Add topping
+__Pasta__ [5]
+ Remove topping
+__Bread__ [6]
+[Submit] [7]
+Order the pizza. [8]
+Go Home [9]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-9) Page Elements:
+1
+Rendering Page...
+-----------
+Welcome to the pizza parlor!
+ What size pizza do you want? (Small, Medium, Large)
+__Medium__ [4]
+[Submit] [5]
+Go Home [6]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-6) Page Elements:
+1
+Rendering Page...
+-----------
+Welcome to the Server on stilgar!
+The Forums![4]
+The Pizza Parlor![5]
+Nim[6]
+Fight in the Coliseum![7]
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit, (4-7) Page Elements:
+1
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+No pages to go back to
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+1
+No pages to go back to
+Rendering Page...
+-----------
+
+
+Welcome To Sparkzilla?
+
+
+-----------
+Actions: (1) Back, (2) Go to URL, (3) Quit:
+3
+Good Bye!
