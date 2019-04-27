@@ -17,10 +17,10 @@ class Lights extends Page {
     game(inputs, sessionId)
 
   def game(inputs: Map[String, String], sessionId: String): String = {
-    if(inputs.contains("i") && inputs.contains("j")){
-      clickOnGrid(inputs.get("i").get.toInt,inputs.get("j").get.toInt)
+    if (inputs.contains("i") && inputs.contains("j")) {
+      clickOnGrid(inputs.get("i").get.toInt, inputs.get("j").get.toInt)
     }
-    
+
     var lights = ""
     for (i <- 0 until rows) {
       lights += "<p>"
@@ -38,20 +38,31 @@ class Lights extends Page {
     return "<html><body>" +
       "<p>THE LIGHT GAME\n----------------</p>" +
       "<p> Try to turn off all the light!</p>" +
+      "<p> O: on\tX:off\n\n</p>" +
       lights +
+      winText() +
       "</body></html>"
   }
-  
-  def clickOnGrid(i : Integer, j : Integer) {
-    toggleGrid(i,j)
-    toggleGrid(i,j+1)
-    toggleGrid(i,j-1)
-    toggleGrid(i+1,j)
-    toggleGrid(i-1,j)
+
+  private def winText(): String = {
+    for (i <- 0 until rows) {
+      for (j <- 0 until cols) {
+        if (!grid(i)(j)) return ""
+      }
+    }
+    return "<p>\n\nYOU WIN!\n\n</p>"
   }
 
-  def toggleGrid(i : Integer, j : Integer) {
-    if(i < 0 || i >= rows || j <0 || j >= cols){
+  private def clickOnGrid(i: Integer, j: Integer) {
+    toggleGrid(i, j)
+    toggleGrid(i, j + 1)
+    toggleGrid(i, j - 1)
+    toggleGrid(i + 1, j)
+    toggleGrid(i - 1, j)
+  }
+
+  private def toggleGrid(i: Integer, j: Integer) {
+    if (i < 0 || i >= rows || j < 0 || j >= cols) {
       return
     }
     grid(i)(j) = !grid(i)(j)
