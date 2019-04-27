@@ -7,6 +7,8 @@ import javafx.fxml.FXMLLoader
 import javafx.scene.Scene
 import javafx.scene.layout.GridPane
 import javafx.scene.layout.VBox
+import javafx.scene.layout.Pane
+import javafx.scene.layout.HBox
 import javafx.scene.control._
 import javafx.stage.Stage
 import javafx.event._
@@ -203,14 +205,16 @@ class GUIBrowser {
     println("Rendering Page...")
     println("-----------")
     box.getChildren.clear()
-    page.foreach { renderElement(_) }
+    page.foreach { renderElement(_,box) }
     stage.show()
   }
 
-  private def renderElement(ele: HTMLElement) {
+  private def renderElement(ele: HTMLElement, box : Pane) {
     ele match {
       case Paragraph(ele) =>
-        ele.foreach { x => renderElement(x) }
+        val hbox = new HBox();
+        ele.foreach { x => renderElement(x,hbox) }
+        box.getChildren.add(hbox)
       case PageText(content) =>
         val label = new Label()
         label.setText(content)
@@ -245,7 +249,7 @@ class GUIBrowser {
           box.getChildren.add(button)
         }
       case Form(url, ele) =>
-        ele.foreach { x => renderElement(x) }
+        ele.foreach { x => renderElement(x,box) }
       case t: TextInput =>
         val textField = new TextField()
         if (t.getValue.isDefined) textField.setText(t.getValue.get)

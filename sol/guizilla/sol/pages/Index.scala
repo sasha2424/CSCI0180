@@ -9,12 +9,12 @@ class Index extends Page {
 
   def index(inputs: Map[String, String], sessionId: String): String =
     "<html><body><p>WELCOME TO THE SERVER\n---------------------</p>" +
-      "<p>Directory: " +
-      "<a href=\"/SubNumbers\">Number Subtracter</a>" +
-      "<a href=\"/StringBuilder\">String Builder</a>" + 
-      "<a href=\"/Adventure\">Adventure</a>" + 
-      "<a href=\"/Adventure2\">Adventure 2 (not complete)</a>" + 
-      "<a href=\"/Search\">Search</a>"+ 
-      "</p></body></html>"
+      "<p>Directory:</p>" +
+      "<p><a href=\"/SubNumbers\">Number Subtracter</a></p>" +
+      "<p><a href=\"/StringBuilder\">String Builder</a></p>" + 
+      "<p><a href=\"/Adventure\">Adventure</a></p>" + 
+      "<p><a href=\"/Adventure2\">Adventure 2 (not complete)</a></p>" + 
+      "<p><a href=\"/Search\">Search</a></p>"+ 
+      "</body></html>"
 
 }
