@@ -40,7 +40,7 @@ class GUIBrowser {
   private var stage: Stage = null
   private var urlText: String = null
 
-  val port = 8080
+  val port = 8082
 
   var currentHost: String = null
   val homePage = List(
@@ -214,6 +214,7 @@ class GUIBrowser {
       case PageText(content) =>
         val label = new Label()
         label.setText(content)
+        label.wrapTextProperty().setValue(true)
         box.getChildren.add(label)
       case Link(ele, PageText(content)) =>
         var data = if (content.startsWith("#")) "#" else ""

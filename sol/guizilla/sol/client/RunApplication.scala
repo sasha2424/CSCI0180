@@ -1,6 +1,5 @@
 package guizilla.sol.client
 
-import guizilla.sol.client.GUIBrowser
 import javafx.application.Application
 
 import javafx.fxml.FXMLLoader

@@ -2,10 +2,18 @@ package guizilla.sol.pages
 
 import guizilla.src.Page
 
+import scala.collection.mutable.Set
+
 class Adventure2 extends Page {
   private var name = ""
   private var playerClass = ""
   private var inv = Set[String]()
+  
+  override def clone() : Page = {
+    val self = super.clone().asInstanceOf[Adventure2]
+    self.inv = this.inv.clone().asInstanceOf[Set[String]]
+    return self
+  }
 
   override def defaultHandler(inputs: Map[String, String], sessionId: String): String =
     menu(inputs, sessionId)
@@ -75,7 +83,7 @@ class Adventure2 extends Page {
 
   def caveStick(inputs: Map[String, String], sessionId: String): String = {
     if (inv.contains("stick")) {
-      inv = inv.-("stick")
+      inv.-("stick")
       return "<html><body>" +
         "<p>You return the stick to the old man\n</p>" +
         "<p>He cradles it like one would a hat. Very odd indeed.</p>" +
@@ -84,7 +92,7 @@ class Adventure2 extends Page {
         "</body></html>"
 
     } else {
-      inv = inv.+("stick")
+      inv.+("stick")
       return "<html><body>" +
         "<p>You snatch the stick from old mans hands!\n</p>" +
         "<p>Surprizingly the old man had quite a bit of strength in his old hands.</p>" +
@@ -96,7 +104,7 @@ class Adventure2 extends Page {
   }
 
   def caveOldMan(inputs: Map[String, String], sessionId: String): String = {
-    inv = inv.+("old man")
+    inv.+("old man")
     return "<html><body>" +
       "<p>You Grab the old man and squeeze him into your pack.</p>" +
       "<p>Thankfully his old frail body folds up nicely and there is plenty" +
@@ -121,7 +129,7 @@ class Adventure2 extends Page {
   }
 
   def caveSquat(inputs: Map[String, String], sessionId: String): String = {
-    inv = inv.-("old man")
+    inv.-("old man")
     return "<html><body>" +
       "<p>You squat like a true slav in the cave!\n\n</p>" +
       "<p>The old man doesn't like it. He jumps out of your pack</p>" +
@@ -160,7 +168,7 @@ class Adventure2 extends Page {
   }
   
   def caveOldManDrop(inputs: Map[String, String], sessionId: String): String = {
-    inv = inv.-("old man")
+    inv.-("old man")
     return "<html><body>" +
       "<p>You drop the old man from your pack.\n\n</p>" +
       "<p>Right away the two old men look at each other.</p>" +

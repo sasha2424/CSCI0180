@@ -7,7 +7,6 @@ import java.util.HashSet
 
 class Search extends Page {
 
-  val results = new HashSet[String]()
   val host = "eckert"
   val port1 = 8081
   val port2 = 8082
@@ -27,7 +26,11 @@ class Search extends Page {
     val socket = new Socket(host, port1)
     val br = new BufferedReader(new InputStreamReader(socket.getInputStream))
     val bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream))
-    val errorPage = "<html><body><p>An error occurred!</p></body></html>"
+    val errorPage = "<html><body><p>There was an error retrieving your query.</p>" +
+      "<p><a href=\"/Search\">Return</a></p></body></html>"
+    if (!inputs.contains("key")) {
+      return errorPage
+    }
     bw.write("REQUEST\t" + inputs("key") + "\n")
     bw.flush()
     var response: String = ""
@@ -41,19 +44,17 @@ class Search extends Page {
     if (!response.startsWith("RESPONSE"))
       return errorPage
     else
-      response = response.substring(10)
+      response = response.substring(9)
     var display = ""
     var i = 1
-    for (x <- response.split("\t ")) {
-      results.add(x)
-      display += (i.toString + ". " + x + "\n")
+    for (x <- response.split("\t").map { x => x.substring(x.indexOf(" ") + 1) }) {
+      display += "<p><a href=\"/id:" + sessionId + "/viewResults\">title=" + x + "%" + i.toString() + "." + x + "\n</a></p>"
       i += 1
     }
-    return "<html><body><p>Search Results: \n</p><p>" + display + "</p>" +
-      "<form method=\"post\" action=\"/id:" + sessionId + "/viewResults\">" +
-      "<p>Enter result title you want to view:\n</p>" +
-      "<input type=\"text\" name=\"title\"/>" +
-      "</form></body></html>"
+    return "<html><body>" +
+      "<p>Search Results: \n</p>" +
+      display +
+      "</body></html>"
   }
 
   def viewResults(inputs: Map[String, String], sessionId: String): String = {
@@ -61,16 +62,14 @@ class Search extends Page {
     val br = new BufferedReader(new InputStreamReader(socket.getInputStream))
     val bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream))
     val errorPage = "<html><body><p>Sorry, that was not a result.</p></body></html>"
-    if (results.contains(inputs("title")))
-      bw.write(inputs("title"))
-    else
-      return errorPage
+    bw.write(inputs("title") + "\n")
+
     bw.flush()
     var display: String = ""
-    var line = ""
+    var line = br.readLine()
     while (line != null) {
-      line = br.readLine
       display += line + "\n"
+      line = br.readLine()
     }
     bw.close()
     br.close()

@@ -15,7 +15,7 @@ class Server {
   class InvalidSessionID(s: String) extends Exception(s) {}
 
   def run() {
-    val server = new ServerSocket(8080)
+    val server = new ServerSocket(8082)
     var socket: Socket = null
     try {
       while (true) {
