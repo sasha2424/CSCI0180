@@ -12,6 +12,12 @@ class Lights extends Page {
       grid(i)(j) = if (Math.random() < .5) true else false
     }
   }
+  
+  override def clone() : Page = {
+    val self = super.clone().asInstanceOf[Lights]
+    self.grid = this.grid.clone().asInstanceOf[Array[Array[Boolean]]]
+    return self
+  }
 
   override def defaultHandler(inputs: Map[String, String], sessionId: String): String =
     game(inputs, sessionId)

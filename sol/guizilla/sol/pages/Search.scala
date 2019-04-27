@@ -34,10 +34,10 @@ class Search extends Page {
     bw.write("REQUEST\t" + inputs("key") + "\n")
     bw.flush()
     var response: String = ""
-    var line = ""
+    var line = br.readLine
     while (line != null) {
-      line = br.readLine
       response += line
+      line = br.readLine
     }
     bw.close()
     br.close()
