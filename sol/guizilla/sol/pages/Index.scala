@@ -13,6 +13,7 @@ class Index extends Page {
       "<a href=\"/SubNumbers\">Number Subtracter</a>" +
       "<a href=\"/StringBuilder\">String Builder</a>" + 
       "<a href=\"/Adventure\">Adventure</a>" + 
+      "<a href=\"/Search\">Search</a>"+ 
       "</p></body></html>"
 
 }
