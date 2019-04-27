@@ -12,10 +12,15 @@ class Lights extends Page {
       grid(i)(j) = if (Math.random() < .5) true else false
     }
   }
-  
-  override def clone() : Page = {
+
+  override def clone(): Page = {
     val self = super.clone().asInstanceOf[Lights]
-    self.grid = this.grid.clone().asInstanceOf[Array[Array[Boolean]]]
+    self.grid = Array.ofDim[Boolean](rows, cols)
+    for (i <- 0 until rows) {
+      for (j <- 0 until cols) {
+        self.grid(i)(j) = grid(i)(j)
+      }
+    }
     return self
   }
 
