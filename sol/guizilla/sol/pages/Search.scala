@@ -39,7 +39,8 @@ class Search extends Page {
     val socket = new Socket(host, port1)
     val br = new BufferedReader(new InputStreamReader(socket.getInputStream))
     val bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream))
-    val errorPage = "<html><body><p>There was an error retrieving your query.</p>" +
+    val errorPage = 
+      "<html><body><p>There was an error retrieving your query.</p>" +
       "<p><a href=\"/Search\">Return</a></p></body></html>"
     if (!inputs.contains("key")) {
       return errorPage
@@ -61,7 +62,8 @@ class Search extends Page {
     var display = ""
     var i = 1
     for (x <- response.split("\t").map { x => x.substring(x.indexOf(" ") + 1) }) {
-      display += "<p><a href=\"/id:" + sessionId + "/viewResults\">title=" + x + "%" + i.toString() + "." + x + "\n</a></p>"
+      display += "<p><a href=\"/id:" + sessionId + 
+      "/viewResults\">title=" + x + "%" + i.toString() + "." + x + "\n</a></p>"
       i += 1
     }
     return "<html><body>" +
@@ -79,7 +81,8 @@ class Search extends Page {
     val socket = new Socket(host, port2)
     val br = new BufferedReader(new InputStreamReader(socket.getInputStream))
     val bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream))
-    val errorPage = "<html><body><p>Sorry, that was not a result.</p></body></html>"
+    val errorPage = 
+      "<html><body><p>Sorry, that was not a result.</p></body></html>"
     bw.write(inputs("title") + "\n")
 
     bw.flush()

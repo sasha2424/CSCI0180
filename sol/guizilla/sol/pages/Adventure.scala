@@ -9,7 +9,8 @@ class Adventure extends Page {
   private var name = ""
   private var playerClass = ""
 
-  override def defaultHandler(inputs: Map[String, String], sessionId: String): String =
+  override def defaultHandler(inputs: Map[String, String],
+                              sessionId: String): String =
     menu(inputs, sessionId)
 
   /**
@@ -92,7 +93,7 @@ class Adventure extends Page {
       "<form method=\"post\" action=\"/id:" + sessionId + "/cave2\">" +
       "<p>What can travel around the world while staying in a corner?</p>" +
       "<input type=\"text\" name=\"riddle\" />" +
-      "<p><a href=\"/id:" + sessionId + "/end\"> Try to " + 
+      "<p><a href=\"/id:" + sessionId + "/end\"> Try to " +
       "Grab the stick! </a></p>" +
       "<input type=\"submit\" value=\"submit\" />" +
       "</form></body></html>"
@@ -118,23 +119,32 @@ class Adventure extends Page {
     val option =
       playerClass match {
         case "mage" =>
-          "<p><a href=\"/id:" + sessionId + "/end\"> Cast a spell to Darken the room</a></p>" +
-            "<p><a href=\"/id:" + sessionId + "/win\"> Cast the Yeet Spell</a></p>"
+          "<p><a href=\"/id:" + sessionId +
+            "/end\"> Cast a spell to Darken the room</a></p>" +
+            "<p><a href=\"/id:" + sessionId +
+            "/win\"> Cast the Yeet Spell</a></p>"
         case "fighter" =>
-          "<p><a href=\"/id:" + sessionId + "/end\"> Stab the old man with your sword</a></p>" +
-            "<p><a href=\"/id:" + sessionId + "/win\"> Yeet the old man with your sword</a></p>"
+          "<p><a href=\"/id:" + sessionId +
+            "/end\"> Stab the old man with your sword</a></p>" +
+            "<p><a href=\"/id:" + sessionId +
+            "/win\"> Yeet the old man with your sword</a></p>"
         case "rogue" =>
-          "<p><a href=\"/id:" + sessionId + "/end\"> Sneek away from the old man</a></p>" +
-            "<p><a href=\"/id:" + sessionId + "/win\"> Disappear only to YEET the old man from behind</a></p>"
+          "<p><a href=\"/id:" + sessionId +
+            "/end\"> Sneek away from the old man</a></p>" +
+            "<p><a href=\"/id:" + sessionId +
+            "/win\"> Disappear only to YEET the old man from behind</a></p>"
       }
 
     if (inputs.get("riddle").isEmpty) { return end(inputs, sessionId) }
     if (inputs.get("riddle").get.toLowerCase().contains("stamp")) {
       return "<html><body>" +
-        "<p>Old man: \n\tA stamp!! YES.\n You are clever... but you are pOwErLeSs tO My sTiCc!!!!\n\n</p>" +
-        "<p><a href=\"/id:" + sessionId + "/end\"> attempt to tackle the OldMan</a></p>" +
+        "<p>Old man: \n\tA stamp!! YES.\n You are clever... " +
+        "but you are pOwErLeSs tO My sTiCc!!!!\n\n</p>" +
+        "<p><a href=\"/id:" + sessionId +
+        "/end\"> attempt to tackle the OldMan</a></p>" +
         option +
-        "<p><a href=\"/id:" + sessionId + "/end\"> Grab the stick as he swings it at you</a></p>" +
+        "<p><a href=\"/id:" + sessionId +
+        "/end\"> Grab the stick as he swings it at you</a></p>" +
         "</body></html>"
     }
     return end(inputs, sessionId)
@@ -150,8 +160,10 @@ class Adventure extends Page {
     return "<html><body>" +
       "<p>Congradulations " + name + "! You have become a legend</p>" +
       "<p> The prophecy of the great YEETER has come true</p>" +
-      "<p> May you praise the people of this humble kingdome with your yeets!\n\n</p>" +
-      "<p><a href=\"/Adventure\"> Yeet yourself into a new form and try again</a></p>" +
+      "<p> May you praise the people of this humble kingdome " +
+      "with your yeets!\n\n</p>" +
+      "<p><a href=\"/Adventure\"> Yeet yourself into a new " +
+      "form and try again</a></p>" +
       "</body></html>"
   }
 
