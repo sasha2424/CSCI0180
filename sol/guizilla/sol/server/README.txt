@@ -85,7 +85,20 @@ Additional features include:
 __________________________________________________________________
 Testing:
 
+The server is able to communicate successfully with Google Chrome and
+Microsoft Edge, which renders all supported HTML elements. We created
+several different pages to fully test the server's functionality. A
+variety of form inputs and URL bar inputs to ensure that the server can
+handle edge cases and bad inputs.
 
+For the client, we made sure that all the pages we designed were rendered
+as desired. The browser supported the additional functionality that we
+added to certain elements. We also performed rigorous and exhaustive testing
+of inputs. All actual results were as expected. Compatibility with Sparkzilla
+was also tested.
+
+Some additional functionality was not compatible with other browsers, but did
+not cause errors.
 
 __________________________________________________________________
 Bugs:
