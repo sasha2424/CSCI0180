@@ -14,6 +14,7 @@ import javafx.stage.Stage
 import javafx.event._
 import javafx.beans.value.ChangeListener
 import javafx.beans.value.ObservableValue
+import javafx.scene.text.Font
 
 import java.net._
 
@@ -41,6 +42,8 @@ class GUIBrowser {
   private var urlText: String = null
 
   val port = 8082
+
+  private val font = Font.font("Veranda", 12)
 
   var currentHost: String = null
   val homePage = List(

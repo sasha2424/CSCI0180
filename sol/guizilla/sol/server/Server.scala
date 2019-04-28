@@ -24,7 +24,7 @@ class Server {
    * Run main server loop
    */
   def run() {
-    val server = new ServerSocket(8082)
+    val server = new ServerSocket(8080)
     var socket: Socket = null
     try {
       while (true) {
@@ -60,9 +60,11 @@ class Server {
             sendHTMLInternalErrorToClient(bw)
           case e: InvalidSessionID =>
             sendHTMLSessionErrorToClient(bw)
-          case e: Exception =>
-            sendHTMLInternalErrorToClient(bw)
             e.printStackTrace()
+          case e: NullPointerException =>
+            sendHTMLInternalErrorToClient(bw)
+          case e : Throwable =>
+            sendHTMLInternalErrorToClient(bw)
         } finally {
           socket.shutdownOutput()
           socket.close()
