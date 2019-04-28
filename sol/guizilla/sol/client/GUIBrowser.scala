@@ -263,6 +263,7 @@ class GUIBrowser {
       case SubmitInput(form) =>
 
         val button = new Button("Submit")
+        button.setFont(Font.font ("Verdana", 20))
         button.setStyle("-fx-text-fill: #0000ff");
         button.setOnAction(
           new EventHandler[ActionEvent]() {
