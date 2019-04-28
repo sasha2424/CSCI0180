@@ -45,7 +45,7 @@ class GUIBrowser {
 
   private val font = Font.font("Veranda", 12)
 
-  val port = 8082
+  val port = 8080
 
   var currentHost: String = null
   val homePage = List(
