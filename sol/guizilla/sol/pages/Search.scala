@@ -5,6 +5,9 @@ import java.net._
 import java.io._
 import java.util.HashSet
 
+/**
+  * Page for Search
+  */
 class Search extends Page {
 
   val host = "eckert"
@@ -13,6 +16,11 @@ class Search extends Page {
 
   def defaultHandler(inputs: Map[String, String], sessionId: String): String = home(inputs, sessionId)
 
+  /**
+    * Home page to enter search keyword
+    * @param inputs- Map[String, String]
+    * @param sessionId- String containing session ID
+    */
   def home(inputs: Map[String, String], sessionId: String): String = {
     return "<html><body><p>Search</p>" +
       "<form method=\"post\" action=\"/id:" + sessionId + "/results\">" +
@@ -22,6 +30,11 @@ class Search extends Page {
       "</form></body></html>"
   }
 
+  /**
+    * Search results page
+    * @param inputs- Map[String, String] containing keyword
+    * @param sessionId- String containing session ID
+    */
   def results(inputs: Map[String, String], sessionId: String): String = {
     val socket = new Socket(host, port1)
     val br = new BufferedReader(new InputStreamReader(socket.getInputStream))
@@ -57,6 +70,11 @@ class Search extends Page {
       "</body></html>"
   }
 
+  /**
+    * Page to view full article for search result
+    * @param inputs- Map[String, String] containing title of page to be viewed
+    * @param sessionId- String containing session ID
+    */
   def viewResults(inputs: Map[String, String], sessionId: String): String = {
     val socket = new Socket(host, port2)
     val br = new BufferedReader(new InputStreamReader(socket.getInputStream))

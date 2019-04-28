@@ -2,11 +2,17 @@ package guizilla.sol.pages
 
 import guizilla.src._
 
+/**
+  * Page for Lights game
+  */
 class Lights extends Page {
   private val rows = 5
   private val cols = 5
   private var grid = Array.ofDim[Boolean](rows, cols)
 
+  /**
+    * Randomly generate board
+    */
   for (i <- 0 until rows) {
     for (j <- 0 until cols) {
       grid(i)(j) = if (Math.random() < .5) true else false
@@ -27,6 +33,11 @@ class Lights extends Page {
   override def defaultHandler(inputs: Map[String, String], sessionId: String): String =
     game(inputs, sessionId)
 
+  /**
+    * Game page
+    * @param inputs- Map[String, String] containing move entered
+    * @param sessionId- String containing session ID
+    */
   def game(inputs: Map[String, String], sessionId: String): String = {
     if (inputs.contains("i") && inputs.contains("j")) {
       clickOnGrid(inputs.get("i").get.toInt, inputs.get("j").get.toInt)
@@ -55,6 +66,10 @@ class Lights extends Page {
       "</body></html>"
   }
 
+  /**
+    * Returns win text if user has won
+    * @returns- String
+    */
   private def winText(): String = {
     for (i <- 0 until rows) {
       for (j <- 0 until cols) {
@@ -64,6 +79,11 @@ class Lights extends Page {
     return "<p>\n\nYOU WIN!\n\n</p>"
   }
 
+  /**
+    * Register user's move on particular grid entry
+    * @param i- Row number
+    * @param j- Column number
+    */
   private def clickOnGrid(i: Integer, j: Integer) {
     toggleGrid(i, j)
     toggleGrid(i, j + 1)
@@ -72,6 +92,11 @@ class Lights extends Page {
     toggleGrid(i - 1, j)
   }
 
+  /**
+    * Switch light on/off
+    * @param i- Row number
+    * @param j- Column number
+    */
   private def toggleGrid(i: Integer, j: Integer) {
     if (i < 0 || i >= rows || j < 0 || j >= cols) {
       return

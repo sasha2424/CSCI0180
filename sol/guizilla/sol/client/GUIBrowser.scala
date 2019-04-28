@@ -30,8 +30,6 @@ class InvalidURLException extends Exception
 
 /**
   * Class responsible for handling browser navigation.
-  * TODO: extend Browser class that was written for Sparkzilla, i.e.
-  * where your code dealt with networking and communicating with server.
   */
 class GUIBrowser {
 
@@ -205,15 +203,20 @@ class GUIBrowser {
     println("Rendering Page...")
     println("-----------")
     box.getChildren.clear()
-    page.foreach { renderElement(_,box) }
+    page.foreach { renderElement(_, box) }
     stage.show()
   }
 
-  private def renderElement(ele: HTMLElement, box : Pane) {
+  /**
+    * Renders HTML element appropriately in HBox
+    * @param ele- HTMLElement to be rendered
+    * @param box- VBox in which element needs to be rendered
+    */
+  private def renderElement(ele: HTMLElement, box: Pane) {
     ele match {
       case Paragraph(ele) =>
         val hbox = new HBox();
-        ele.foreach { x => renderElement(x,hbox) }
+        ele.foreach { x => renderElement(x, hbox) }
         box.getChildren.add(hbox)
       case PageText(content) =>
         val label = new Label()
@@ -249,7 +252,7 @@ class GUIBrowser {
           box.getChildren.add(button)
         }
       case Form(url, ele) =>
-        ele.foreach { x => renderElement(x,box) }
+        ele.foreach { x => renderElement(x, box) }
       case t: TextInput =>
         val textField = new TextField()
         if (t.getValue.isDefined) textField.setText(t.getValue.get)

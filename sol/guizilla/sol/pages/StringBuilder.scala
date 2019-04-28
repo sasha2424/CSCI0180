@@ -2,13 +2,19 @@ package guizilla.sol.pages
 
 import guizilla.src._
 
+/**
+  * Page to play with strings
+  */
 class StringBuilder extends Page {
-  private var text = ""
-  private var option = 0
 
   override def defaultHandler(inputs: Map[String, String], sessionId: String): String =
     menu(inputs, sessionId)
 
+  /**
+    * Menu page to enter string and desired option
+    * @param inputs- Map[String, String]
+    * @param sessionId- String containing session ID
+    */
   def menu(inputs: Map[String, String], sessionId: String): String =
     "<html><body><p>StringBuilder\n--------------</p>" +
       "<form method=\"post\" action=\"/id:" + sessionId + "/result\">" +
@@ -20,6 +26,11 @@ class StringBuilder extends Page {
       "<input type=\"submit\" value=\"submit\" />" +
       "</form></body></html>"
 
+  /**
+    * Result page
+    * @param inputs- Map[String, String] containing string and option
+    * @param sessionId- String containing session ID
+    */
   def result(inputs: Map[String, String], sessionId: String): String =
     inputs.get("option") match {
       case Some("1") =>

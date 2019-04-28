@@ -8,7 +8,13 @@ import javafx.scene.Scene
 import javafx.stage.Stage
 import javafx.scene.layout.GridPane
 
+/**
+  * Class to run GUI Browser
+  */
 class RunApplication extends Application {
+  /**
+    * Sets up GUI
+    */
   override def start(stage: Stage) {
     // Loads fxml_main.fxml
     var loader = new FXMLLoader(getClass().getResource("fxml_main.fxml"))
@@ -19,7 +25,7 @@ class RunApplication extends Application {
     // Creates controller object from GUIBrowser
     var controller: GUIBrowser = loader.getController()
 
-    // Sets the stage for GUIBrowser 
+    // Sets the stage for GUIBrowser
     controller.setStage(stage)
 
     // Customizes and shows stage
@@ -27,10 +33,12 @@ class RunApplication extends Application {
     stage.setScene(new Scene(root, 1000, 700))
     stage.show()
 
-    // TODO: render home page
   }
 }
 
+/**
+  * Object for running
+  */
 object RunApplication extends App {
   javafx.application.Application.launch(classOf[RunApplication])
 }
