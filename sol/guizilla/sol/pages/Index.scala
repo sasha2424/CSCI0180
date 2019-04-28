@@ -3,16 +3,17 @@ package guizilla.sol.pages
 import guizilla.src._
 
 /**
-  * Server index page
-  */
+ * Server index page
+ */
 class Index extends Page {
 
-  override def defaultHandler(inputs: Map[String, String], sessionId: String): String =
+  override def defaultHandler(inputs: Map[String, String],
+                              sessionId: String): String =
     index(inputs, sessionId)
 
   /**
-    * Links to indexed pages
-    */
+   * Links to indexed pages
+   */
   def index(inputs: Map[String, String], sessionId: String): String =
     "<html><body><p>WELCOME TO THE SERVER\n---------------------</p>" +
       "<p>Directory:</p>" +

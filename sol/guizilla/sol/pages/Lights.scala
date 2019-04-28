@@ -3,16 +3,16 @@ package guizilla.sol.pages
 import guizilla.src._
 
 /**
-  * Page for Lights game
-  */
+ * Page for Lights game
+ */
 class Lights extends Page {
   private val rows = 5
   private val cols = 5
   private var grid = Array.ofDim[Boolean](rows, cols)
 
   /**
-    * Randomly generate board
-    */
+   * Randomly generate board
+   */
   for (i <- 0 until rows) {
     for (j <- 0 until cols) {
       grid(i)(j) = if (Math.random() < .5) true else false
@@ -30,14 +30,15 @@ class Lights extends Page {
     return self
   }
 
-  override def defaultHandler(inputs: Map[String, String], sessionId: String): String =
+  override def defaultHandler(inputs: Map[String, String],
+                              sessionId: String): String =
     game(inputs, sessionId)
 
   /**
-    * Game page
-    * @param inputs- Map[String, String] containing move entered
-    * @param sessionId- String containing session ID
-    */
+   * Game page
+   * @param inputs- Map[String, String] containing move entered
+   * @param sessionId- String containing session ID
+   */
   def game(inputs: Map[String, String], sessionId: String): String = {
     if (inputs.contains("i") && inputs.contains("j")) {
       clickOnGrid(inputs.get("i").get.toInt, inputs.get("j").get.toInt)
@@ -47,7 +48,8 @@ class Lights extends Page {
     for (i <- 0 until rows) {
       lights += "<p>"
       for (j <- 0 until cols) {
-        lights += "<a href=\"/id:" + sessionId + "/game\">#i=" + i + "&j=" + j + "%"
+        lights += "<a href=\"/id:" + sessionId +
+          "/game\">#i=" + i + "&j=" + j + "%"
         if (grid(i)(j)) {
           lights += "X</a>"
         } else {
@@ -67,9 +69,9 @@ class Lights extends Page {
   }
 
   /**
-    * Returns win text if user has won
-    * @returns- String
-    */
+   * Returns win text if user has won
+   * @returns- String
+   */
   private def winText(): String = {
     for (i <- 0 until rows) {
       for (j <- 0 until cols) {
@@ -80,10 +82,10 @@ class Lights extends Page {
   }
 
   /**
-    * Register user's move on particular grid entry
-    * @param i- Row number
-    * @param j- Column number
-    */
+   * Register user's move on particular grid entry
+   * @param i- Row number
+   * @param j- Column number
+   */
   private def clickOnGrid(i: Integer, j: Integer) {
     toggleGrid(i, j)
     toggleGrid(i, j + 1)
@@ -93,10 +95,10 @@ class Lights extends Page {
   }
 
   /**
-    * Switch light on/off
-    * @param i- Row number
-    * @param j- Column number
-    */
+   * Switch light on/off
+   * @param i- Row number
+   * @param j- Column number
+   */
   private def toggleGrid(i: Integer, j: Integer) {
     if (i < 0 || i >= rows || j < 0 || j >= cols) {
       return
