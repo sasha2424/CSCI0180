@@ -2,6 +2,9 @@ package guizilla.sol.pages
 
 import guizilla.src._
 
+/**
+  * Class for Adventure game page
+  */
 class Adventure extends Page {
   private var name = ""
   private var playerClass = ""
@@ -9,6 +12,11 @@ class Adventure extends Page {
   override def defaultHandler(inputs: Map[String, String], sessionId: String): String =
     menu(inputs, sessionId)
 
+  /**
+    * Menu page to enter name and class
+    * @param inputs- Map[String, String]
+    * @param sessionId- String containing session ID
+    */
   def menu(inputs: Map[String, String], sessionId: String): String =
     "<html><body><p>A D V E N T U R E\n\n</p>" +
       "<form method=\"post\" action=\"/id:" + sessionId + "/check\">" +
@@ -20,6 +28,11 @@ class Adventure extends Page {
       "<input type=\"submit\" value=\"submit\" />" +
       "</form></body></html>"
 
+  /**
+    * Name and class confirmation/rejection page
+    * @param inputs- Map[String, String] containing chosen name and class
+    * @param sessionId- String containing session ID
+    */
   def check(inputs: Map[String, String], sessionId: String): String = {
     if (inputs.get("class").isEmpty) {
       return "<html><body>" +
@@ -52,6 +65,11 @@ class Adventure extends Page {
       "</body></html>"
   }
 
+  /**
+    * Page for cave scene
+    * @param inputs- Map[String, String]
+    * @param sessionId- String containing session ID
+    */
   def cave(inputs: Map[String, String], sessionId: String): String =
     "<html><body>" +
       "<p>You enter an ancient cave in the side of a mountain.</p>" +
@@ -70,6 +88,11 @@ class Adventure extends Page {
       "<input type=\"submit\" value=\"submit\" />" +
       "</form></body></html>"
 
+  /**
+    * Page for game over
+    * @param inputs- Map[String, String]
+    * @param sessionId- String containing session ID
+    */
   def end(inputs: Map[String, String], sessionId: String): String = {
     return "<html><body>" +
       "<p>" + name + "... it seems that you have died.</p>" +
@@ -77,7 +100,11 @@ class Adventure extends Page {
       "<p><a href=\"/Adventure\"> Try Again</a></p>" +
       "</body></html>"
   }
-
+  /**
+    * Page for cave riddle scene
+    * @param inputs- Map[String, String] containing answer to riddle
+    * @param sessionId- String containing session ID
+    */
   def cave2(inputs: Map[String, String], sessionId: String): String = {
     val option =
       playerClass match {
@@ -105,6 +132,11 @@ class Adventure extends Page {
 
   }
 
+  /**
+    * Page for victory
+    * @param inputs- Map[String, String]
+    * @param sessionId- String containing session ID
+    */
   def win(inputs: Map[String, String], sessionId: String): String = {
     return "<html><body>" +
       "<p>Congradulations " + name + "! You have become a legend</p>" +
