@@ -41,7 +41,7 @@ class GUIBrowser {
   private var stage: Stage = null
   private var urlText: String = null
 
-  val port = 8082
+  val port = 8080
 
   private val font = Font.font("Veranda", 12)
 
@@ -140,6 +140,7 @@ class GUIBrowser {
     */
   private def connectToUrl(url: String, formData: String) {
     try {
+      urlBar.setText(url)
       val parsedUrl = parseUrl(url)
       loadPage(parsedUrl._1, parsedUrl._2, formData)
     } catch {
