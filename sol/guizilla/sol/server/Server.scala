@@ -8,21 +8,21 @@ import java.io._
 import scala.collection.immutable.HashMap
 
 /**
-  * Class for handling server
-  */
+ * Class for handling server
+ */
 class Server {
 
   val pageMap = new scala.collection.mutable.HashMap[String, Page]
   var ID = 0
 
   /**
-    * Exception for invalid session ID
-    */
+   * Exception for invalid session ID
+   */
   class InvalidSessionID(s: String) extends Exception(s) {}
 
   /**
-    * Run main server loop
-    */
+   * Run main server loop
+   */
   def run() {
     val server = new ServerSocket(8080)
     var socket: Socket = null
@@ -66,6 +66,14 @@ class Server {
           // exit and wait for new connection
           case e: NullPointerException =>
           // exit and wait for new connection
+          case e: NoSuchMethodException =>
+            sendHTMLNotFoundToClient(bw)
+          case e: IllegalAccessException =>
+            sendHTMLInternalErrorToClient(bw)
+          case e: InstantiationException =>
+            sendHTMLInternalErrorToClient(bw)
+          case e: IllegalAccessException =>
+            sendHTMLInternalErrorToClient(bw)
 
         } finally {
           socket.shutdownOutput()
@@ -79,9 +87,9 @@ class Server {
   }
 
   /**
-    * Send Internal Server Error page to client
-    * @param bw- BufferedReader to write to client socket
-    */
+   * Send Internal Server Error page to client
+   * @param bw- BufferedReader to write to client socket
+   */
   private def sendHTMLInternalErrorToClient(bw: BufferedWriter) {
     bw.write("HTTP/1.0 500 Internal Server Error\n" +
       "Server: Sparkserver/1.0\n" +
@@ -93,9 +101,9 @@ class Server {
   }
 
   /**
-    * Send Invalid Session ID Error page to client
-    * @param bw- BufferedReader to write to client socket
-    */
+   * Send Invalid Session ID Error page to client
+   * @param bw- BufferedReader to write to client socket
+   */
   private def sendHTMLSessionErrorToClient(bw: BufferedWriter) {
     bw.write("HTTP/1.0 500 Internal Server Error\n" +
       "Server: Sparkserver/1.0\n" +
@@ -108,9 +116,9 @@ class Server {
   }
 
   /**
-    * Send Page Not FOund Error page to client
-    * @param bw- BufferedReader to write to client socket
-    */
+   * Send Page Not FOund Error page to client
+   * @param bw- BufferedReader to write to client socket
+   */
   private def sendHTMLNotFoundToClient(bw: BufferedWriter) {
     bw.write("HTTP/1.0 404 Not Found\n" +
       "Server: Sparkserver/1.0\n" +
@@ -122,9 +130,9 @@ class Server {
   }
 
   /**
-    * Send Bad Request Error Pae to client
-    * @param bw- BufferedWriter to write to client socket
-    */
+   * Send Bad Request Error Pae to client
+   * @param bw- BufferedWriter to write to client socket
+   */
   private def sendHTMLBadToClient(bw: BufferedWriter) {
     bw.write("HTTP/1.0 400 Bad Request\n" +
       "Server: Sparkserver/1.0\n" +
@@ -135,10 +143,10 @@ class Server {
     bw.flush()
   }
   /**
-    * Send HTML page to client
-    * @param htmlPage- String containing html
-    * @param bw- BufferedWriter to write to client socket
-    */
+   * Send HTML page to client
+   * @param htmlPage- String containing html
+   * @param bw- BufferedWriter to write to client socket
+   */
   private def sendHTMLPageToClient(htmlPage: String, bw: BufferedWriter) {
     bw.write("HTTP/1.0 200 OK\n" +
       "Server: Sparkserver/1.0\n" +
@@ -150,10 +158,10 @@ class Server {
   }
 
   /**
-    * Parse encoded form data
-    * @param data- String containing encoded form data
-    * @return- Map[String, String] giving field values
-    */
+   * Parse encoded form data
+   * @param data- String containing encoded form data
+   * @return- Map[String, String] giving field values
+   */
   private def parseFormData(data: String): Map[String, String] = {
     var inputs = new HashMap[String, String]
     if (data.length() == 0) {
@@ -177,10 +185,10 @@ class Server {
   }
 
   /**
-    * Get method name from link
-    * @param link- String containing link
-    * @return- String containing method name
-    */
+   * Get method name from link
+   * @param link- String containing link
+   * @return- String containing method name
+   */
   private def getMethodFromLink(link: String): String = {
     if (!link.contains("/")) {
       return "defaultHandler"
@@ -190,10 +198,10 @@ class Server {
   }
 
   /**
-    * Get session ID from link
-    * @param link- String containing link
-    * @return- String containing ID
-    */
+   * Get session ID from link
+   * @param link- String containing link
+   * @return- String containing ID
+   */
   private def getIDFromLink(link: String): String = {
     if (link.startsWith("id:")) {
       val stringID = link.split("/")(0).substring(3)
@@ -217,16 +225,16 @@ class Server {
   }
 
   /**
-    * Gets HTML page for given method, inputs and session ID
-    * @param method- String containing method name
-    * @param inputs- Map[String, String] containing field values as input to method
-    * @param id- String containing session ID
-    * @return- String containing html for resulting page
-    */
+   * Gets HTML page for given method, inputs and session ID
+   * @param method- String containing method name
+   * @param inputs- Map[String, String] containing field values as input to method
+   * @param id- String containing session ID
+   * @return- String containing html for resulting page
+   */
   private def getHTMLPageFromLink(
     method: String,
     inputs: Map[String, String],
-    id:     String): String = {
+    id: String): String = {
     val page = pageMap.get(id).get
     val pageMethod = page.getClass.getMethod(
       method,
@@ -235,9 +243,9 @@ class Server {
   }
 
   /**
-    * Read request from client
-    * @param br- BufferedReader for client socket
-    */
+   * Read request from client
+   * @param br- BufferedReader for client socket
+   */
   private def readInput(br: BufferedReader): (String, String) = {
     var link = ""
     var data = ""
@@ -256,8 +264,8 @@ class Server {
 
 }
 /**
-  * Object to run Server
-  */
+ * Object to run Server
+ */
 object Server extends App {
   (new Server).run()
 }

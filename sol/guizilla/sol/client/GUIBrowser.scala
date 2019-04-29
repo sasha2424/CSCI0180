@@ -140,7 +140,6 @@ class GUIBrowser {
     */
   private def connectToUrl(url: String, formData: String) {
     try {
-      urlBar.setText(url)
       val parsedUrl = parseUrl(url)
       loadPage(parsedUrl._1, parsedUrl._2, formData)
     } catch {
@@ -270,7 +269,7 @@ class GUIBrowser {
       case SubmitInput(form) =>
 
         val button = new Button("Submit")
-        button.setFont(Font.font("Verdana", 20))
+        button.setFont(font)
         button.setStyle("-fx-text-fill: #0000ff");
         button.setOnAction(
           new EventHandler[ActionEvent]() {

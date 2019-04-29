@@ -60,7 +60,7 @@ class SubNumbers extends Page {
         try {
           val num2 = num.toInt
           "<html><body>" +
-            "<p>" + num1 + " + " + num2 + " = " + (num1 - num2) + "</p>" +
+            "<p>" + num1 + " - " + num2 + " = " + (num1 - num2) + "</p>" +
             "</body></html>"
         } catch {
           case _: NumberFormatException =>
